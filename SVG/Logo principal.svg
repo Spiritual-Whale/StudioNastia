@@ -7,7 +7,7 @@
       }
 
       .cls-1, .cls-2, .cls-3 {
-        fill: #004e56;
+        fill: #000000;
       }
 
       .cls-4 {
@@ -30,7 +30,7 @@
       }
 
       .cls-2 {
-        stroke: #004e56;
+        stroke: #000000;
         stroke-miterlimit: 10;
         stroke-width: .5px;
       }
