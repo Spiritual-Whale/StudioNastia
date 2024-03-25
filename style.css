@@ -703,6 +703,10 @@ h3 {
   .square {
     height: 200px;
   }
+
+  .header-img {
+    height: 40vh;
+  }
 }
   
 @media screen and (max-width: 460px) {
@@ -715,7 +719,7 @@ h3 {
   }
 
   .header-img {
-    height: 40vh;
+    height: 30vh;
   }
 
   .sub-logo {
