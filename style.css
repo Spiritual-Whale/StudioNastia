@@ -104,7 +104,7 @@ a {
 }
 .header-img {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   object-fit: cover;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -117,11 +117,11 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 3em;
+  gap: 2em;
 }
 .titre {
   font-size: 42px;
@@ -408,6 +408,7 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5em;
+  text-align: center;
 }
 
 .footer-title {
@@ -444,6 +445,8 @@ h3 {
   align-items: center;
   gap: 1em;
   margin-top: 5em;
+  flex-wrap: wrap;
+  font-size: 16px;
 }
 
 /* page de contact */
@@ -475,7 +478,7 @@ h3 {
 
 
 
-/* responsive */
+/* responsive :::::::::::::::::::::::::: */ 
 
 @media screen and (max-width: 1300px){
 
@@ -513,9 +516,9 @@ h3 {
     font-size: 30px;
     max-width: 80%;
   }
-  .header-img {
+  /* .header-img {
     height: 60vh;
-  }
+  } */
   .main-text, .intro-text, .bio-text, .block-text-left, .block-text-right, .footer-link, .tools-text, .contact-text {
     font-size: 16px;
   }
@@ -648,9 +651,6 @@ h3 {
     height: auto;
   }
 
-  .header-img {
-    height: 50vh;
-  }
 
   .header-text {
     gap: 1em;
@@ -664,11 +664,6 @@ h3 {
 
   .latest-img {
     width: 40vw;
-  }
-
-  .home-title {
-    font-size: 25px;
-    max-width: 100%;
   }
 
   .home-title {
@@ -713,8 +708,12 @@ h3 {
     flex-direction: column;
   }
 
-  .header-img {
+  /* .header-img {
     height: 40vh;
+  } */
+
+  .sub-logo {
+    width: 80px;
   }
 
   .square {
@@ -722,3 +721,12 @@ h3 {
   }
 }
 
+@media screen and (max-height: 690px){
+  .header-img {
+    height: 130vh;
+  }
+
+  .titre {
+    font-size: 30px;
+  }
+}
