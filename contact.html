@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NastiaStudio | Contact</title>
-    <link rel="shortcut icon" href="SVG/Favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
 
   <body>
@@ -17,7 +18,7 @@
           <div class="menu-scroll">
             <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
             <object
-              data="SVG/triangle.svg"
+              data="img/triangle.svg"
               type="image/svg+xml"
               class="triangle"
             ></object>
@@ -25,16 +26,16 @@
           <div class="menu-scroll">
             <li><a href="#" class="menu-list">PRESTATIONS</a></li>
             <object
-              data="SVG/triangle.svg"
+              data="img/triangle.svg"
               type="image/svg+xml"
               class="triangle"
             ></object>
           </div>
-          <li><a href="#" class="menu-list">A PROPOS</a></li>
+          <li><a href="about.html" class="menu-list">A PROPOS</a></li>
         </div>
 
         <a href="index.html"
-          ><img src="SVG/Logo principal.svg" class="logo" alt="NastiaStudio"
+          ><img src="img/Logo principal.svg" class="logo" alt="NastiaStudio"
         /></a>
 
         <div class="nav-right">
@@ -45,18 +46,18 @@
           <div class="social-icons-container">
             <li>
               <a href="#" class="icon-link"
-                ><img src="SVG/insta.svg" alt="Instagram" class="social-icons"
+                ><img src="img/insta.svg" alt="Instagram" class="social-icons"
               /></a>
             </li>
             <li>
               <a href="#" class="icon-link"
-                ><img src="SVG/tiktok.svg" alt="TikTok" class="social-icons"
+                ><img src="img/tiktok.svg" alt="TikTok" class="social-icons"
               /></a>
             </li>
             <li>
               <a href="#" class="icon-link"
                 ><img
-                  src="SVG/pinterest.svg"
+                  src="img/pinterest.svg"
                   alt="Pinterest"
                   class="social-icons"
               /></a>
@@ -69,29 +70,23 @@
     <!-- header principal ::::::::: -->
 
     <header class="header">
-      
-        <img
-          src="IMG/contact-picture-1280px-min.jpg"
-          alt=""
-          class="header-img"
-        />
-        <div class="header-text">
-          <h1 class="titre">
-            Travaillons <span class="italic">ensemble</span> pour concrétiser
-            votre projet
-          </h1>
-        </div>
-        <object
-          data="SVG/Submark.svg"
-          type="image/svg+xml"
-          class="sub-logo"
-        ></object>
-      
+      <img src="img/contact-picture-1280px-min.jpg" alt="" class="header-img" />
+      <div class="header-text">
+        <h1 class="titre">
+          Travaillons <span class="italic">ensemble</span> pour concrétiser
+          votre projet
+        </h1>
+      </div>
+      <object
+        data="img/Submark.svg"
+        type="image/svg+xml"
+        class="sub-logo"
+      ></object>
     </header>
     <main>
       <!-- formulaire de contact  ::::::::::::::::::::-->
 
-      <h2 class="home-title">
+      <h2 class="about-title">
         Prêt(e) à embrasser le changement, et à propulser votre entreprise vers
         de nouveaux horizons ?
       </h2>
@@ -100,22 +95,18 @@
         <div class="contact-info">
           <div>
             <p class="titre-contact">E-MAIL</p>
-          <p class="contact-info-text">
-            Nastiastudio@gmail.com
-          </p>
+            <p class="contact-info-text">Nastiastudio@gmail.com</p>
           </div>
           <div>
-          <p class="titre-contact">HORAIRE</p>
-          <p class="contact-info-text">
-            Du Lundi au Vendredi <br>
-            De 10h00 à 18h00
-          </p>
+            <p class="titre-contact">HORAIRE</p>
+            <p class="contact-info-text">
+              Du Lundi au Vendredi <br />
+              De 10h00 à 18h00
+            </p>
           </div>
           <div>
             <p class="titre-contact">LOCALISATION</p>
-          <p class="contact-info-text">
-            Lille, France
-          </p>
+            <p class="contact-info-text">Lille, France</p>
           </div>
         </div>
         <form action="" id="contact-form">
@@ -131,12 +122,13 @@
                 découverte gratuit, afin de discuter plus en détails de vos
                 objectifs. À l’issue de cet échange, je vous enverrai un devis
                 personnalisé selon vos besoins pour vous accompagner dans le
-                développement de votre entreprise.</p>
-                <p class="contact-form-text">
+                développement de votre entreprise.
+              </p>
+              <p class="contact-form-text">
                 Pour toute autre question, n’hésitez pas à me contacter via
                 l’adresse mail : Nastiastudio@gmail.com. Je serai ravie de vous
-                répondre.</p>
-              
+                répondre.
+              </p>
             </div>
 
             <div class="contact-details-firstname">
@@ -164,83 +156,107 @@
             </div>
           </section>
           <section class="request-details-container">
+            <div class="request-details">
+              <label for="radio"
+                >PAR QUEL(S) SERVICE(S) DE NASTIA STUDIO ÊTES-VOUS INTÉRESSÉ(E)?
+                *</label
+              >
 
-            <div class="request-details">
-            <label for="radio">PAR QUEL(S) SERVICE(S) DE NASTIA STUDIO ÊTES-VOUS INTÉRESSÉ(E)? *</label>
-              
-            
-            <div class="radio-button-container">
-              <label for=""><input type="radio" name="radio" class="radio" checked />Identité Visuelle</label>
-              <label for=""><input type="radio" name="radio" class="radio"/>WebDesign</label>
-              <label for=""><input type="radio" name="radio" class="radio" />Community Manager</label>
-              <label for=""><input type="radio" name="radio" class="radio"/>Autre Demande</label>
-            </div>
-            </div>
-            <div class="request-details">
-            <label for="precise-request">
-              SI AUTRE, PRÉCISEZ LA DEMANDE SOUHAITÉE
-            </label>
-            <textarea
-              name=""
-              id="precise-request"
-              cols="30"
-              rows="10"
-              maxlength="500"
-              class="textarea"
-            ></textarea>
-        </div>
-            <div class="request-details">
-            <label for="date">QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ? *</label>
-            <input type="date" id="date" class="date" />
+              <div class="radio-button-container">
+                <label for=""
+                  ><input
+                    type="radio"
+                    name="radio"
+                    class="radio"
+                    checked
+                  />Identité Visuelle</label
+                >
+                <label for=""
+                  ><input
+                    type="radio"
+                    name="radio"
+                    class="radio"
+                  />WebDesign</label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" class="radio" />Community
+                  Manager</label
+                >
+                <label for=""
+                  ><input type="radio" name="radio" class="radio" />Autre
+                  Demande</label
+                >
+              </div>
             </div>
             <div class="request-details">
-            <label for="prices">QUEL EST VOTRE BUDGET POUR CE PROJET ? *</label>
-            <select name="prices" id="prices" class="prices">
-              <option value="1000-2000" selected>1000€ - 2000€</option>
-              <option value="2000-3000">2000€ - 3000€</option>
-              <option value="3000-4000">3000€ - 4000€</option>
-              <option value="4000-5000">5000€ - 6000€</option>
-            </select>
+              <label for="precise-request">
+                SI AUTRE, PRÉCISEZ LA DEMANDE SOUHAITÉE
+              </label>
+              <textarea
+                name=""
+                id="precise-request"
+                cols="30"
+                rows="10"
+                maxlength="500"
+                class="textarea"
+              ></textarea>
             </div>
             <div class="request-details">
-                <label for="">AUTRE CHOSE QUE VOUS VOUDRIEZ NOUS FAIRE SAVOIR ?</label>
-                <textarea name="" id="" class="textarea"></textarea>
+              <label for="date"
+                >QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ? *</label
+              >
+              <input type="date" id="date" class="date" />
             </div>
             <div class="request-details">
-                <label for="">COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ? *</label>
-                <select name="" id="" class="known">
+              <label for="prices"
+                >QUEL EST VOTRE BUDGET POUR CE PROJET ? *</label
+              >
+              <select name="prices" id="prices" class="prices">
+                <option value="1000-2000" selected>1000€ - 2000€</option>
+                <option value="2000-3000">2000€ - 3000€</option>
+                <option value="3000-4000">3000€ - 4000€</option>
+                <option value="4000-5000">5000€ - 6000€</option>
+              </select>
+            </div>
+            <div class="request-details">
+              <label for=""
+                >AUTRE CHOSE QUE VOUS VOUDRIEZ NOUS FAIRE SAVOIR ?</label
+              >
+              <textarea name="" id="" class="textarea"></textarea>
+            </div>
+            <div class="request-details">
+              <label for="">COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ? *</label>
+              <select name="" id="" class="known">
                 <option value="" selected>Instagram</option>
                 <option value="">TikTok</option>
                 <option value="">Pinterest</option>
                 <option value="">Autre</option>
-            </select>
+              </select>
             </div>
             <button type="submit" class="submit-button">Envoyer</button>
           </section>
         </form>
       </div>
-        <div class="social-iframe">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
+      <div class="social-iframe">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
 
-
-        <p class="home-title">RETROUVEZ MOI ÉGALEMENT ICI !</p>
-      
+      <p class="home-title">RETROUVEZ MOI ÉGALEMENT ICI !</p>
     </main>
     <!-- pied de page :::::::::::::::::::::::::::::::::::::::::  -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-content">
           <p class="footer-title">CONTACT</p>
-          <img src="SVG/Logo principal.svg" alt="" class="footer-logo" />
+          <img src="img/Logo principal.svg" alt="" class="footer-logo" />
           <p class="footer-link">NastiaStudio@gmail.com</p>
           <div class="footer-social-icons-container">
-            <img src="SVG/insta.svg" alt="" class="footer-social-icons" />
-            <img src="SVG/tiktok.svg" alt="" class="footer-social-icons" />
-            <img src="SVG/pinterest.svg" alt="" class="footer-social-icons" />
+            <img src="img/insta.svg" alt="" class="footer-social-icons" />
+            <img src="img/tiktok.svg" alt="" class="footer-social-icons" />
+            <img src="img/pinterest.svg" alt="" class="footer-social-icons" />
           </div>
         </div>
         <div class="footer-content">

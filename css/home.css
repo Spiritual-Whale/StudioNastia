@@ -1,0 +1,445 @@
+/* Images Hero */
+
+.header {
+  position: relative;
+  height: auto;
+  margin-bottom: 10em;
+}
+.header-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+.titre {
+  font-size: 42px;
+  text-align: center;
+}
+.services {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.job {
+  font-size: 2em;
+  font-weight: 550;
+}
+.sub-logo {
+  width: auto;
+  height: 10vw;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 48%);
+  fill: black;
+}
+
+/* page principale */
+
+.block-1 {
+  text-align: center;
+  margin: 3em auto 5em auto;
+  width: 100%;
+  line-height: 2em;
+}
+
+.h2-home {
+  font-size: 42px;
+  margin: 0 auto 2em auto;
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 100%;
+  font-weight: 500;
+}
+
+.h3-home {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.intro-text-home {
+  max-width: 70%;
+  line-height: 1.6em;
+  text-align: center;
+  font-family: sans-serif;
+  max-width: 60%;
+}
+.main-text,
+.intro-text-home {
+  margin: 1.5em auto;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4%;
+  max-width: 100%;
+  margin-top: 8%;
+}
+.block-img {
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+}
+
+.block-img-vertical {
+  height: auto;
+  width: 30%;
+  margin-left: 15%;
+  max-width: 100%;
+}
+
+.block-text-right,
+.block-text-left {
+  line-height: 1.6em;
+  font-size: 20px;
+  margin-top: 3%;
+  font-family: sans-serif;
+}
+
+.block-text-right {
+  text-align: right;
+  width: 30%;
+  font-family: sans-serif;
+}
+
+.block-text-left {
+  width: 35%;
+}
+
+.vertical-img {
+  height: auto;
+  width: 30%;
+  max-width: 100%;
+  display: block;
+  margin-left: 30%;
+  margin-top: 4%;
+}
+
+.last-img {
+  height: auto;
+  width: 45%;
+  max-width: 100%;
+  margin-top: 3%;
+  margin-left: 32%;
+}
+
+.latest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7%;
+  width: 100%;
+}
+
+.latest-img-gallery {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  gap: 10px;
+  margin: 0 3% 3%;
+}
+
+.latest-img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1.15;
+}
+
+.latest-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* LA BIO CONTAINER DANS GLOBAL  */
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+}
+.tools {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2.5em;
+}
+
+.tools-img {
+  object-fit: cover;
+  margin-bottom: 5%;
+  height: auto;
+  max-width: 100%;
+  max-height: 550px;
+  aspect-ratio: 1 / 1.2;
+}
+
+.tools-text {
+  text-align: justify;
+  font-size: 20px;
+  max-width: 450px;
+  hyphens: auto;
+  height: 150px;
+  overflow: hidden;
+}
+/* formulaire de contact home page */
+
+.home-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  border: none;
+  margin-bottom: 2em;
+}
+
+.home-form-label {
+  width: 70%;
+}
+
+.label-text {
+  margin-left: 2em;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.home-name,
+.home-email {
+  padding: 0.5em 1.8em;
+  border: 2px solid black;
+  border-radius: 24px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+}
+
+/* Responsive Home Page */
+
+@media screen and (max-width: 1300px) {
+  .titre {
+    text-align: center;
+  }
+  .home-global {
+    font-size: 30px;
+    max-width: 80%;
+  }
+
+  .h2-home {
+    font-size: 28px;
+  }
+
+  .main-text,
+  .intro-text-home,
+  .bio-text,
+  .block-text-left,
+  .block-text-right,
+  .footer-link,
+  .tools-text,
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .h3-home,
+  .footer-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .tools-text {
+    font-size: 16px;
+    max-width: 350px;
+  }
+
+  .tools-container {
+    gap: 0.5em;
+  }
+
+  .tools-img {
+    max-width: 80%;
+  }
+
+  .block {
+    padding: 0.5em;
+  }
+
+  .block-1 {
+    width: 100%;
+  }
+  .block-img {
+    width: 45vw;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .block-text-right,
+  .block-text-left {
+    margin-top: 0;
+    margin-bottom: 1em;
+    width: 55vw;
+  }
+
+  .sub-logo {
+    height: 14vw;
+  }
+
+  .header {
+    margin-bottom: 5em;
+  }
+
+  .latest-img-gallery {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .block {
+    padding: 0.5em;
+    flex-direction: column;
+  }
+
+  .block-img {
+    width: 85%;
+    margin: 0 auto 1.2em auto;
+  }
+
+  .block-text-right,
+  .block-text-left {
+    width: 85%;
+    order: 1;
+    text-align: center;
+    margin: 0 auto 1em auto;
+  }
+
+  .vertical-img {
+    width: 50%;
+    margin-left: 13%;
+    margin-top: 5%;
+  }
+
+  .block-img-vertical {
+    width: 50%;
+    margin: 0 auto 2em auto;
+  }
+
+  .last-img {
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 20%;
+  }
+
+  .tools-container {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .tools {
+    gap: 0;
+    margin-bottom: 1.5em;
+  }
+  .tools-img {
+    max-width: 70vw;
+    margin-top: 1em;
+  }
+  .tools-text {
+    max-width: 90%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    height: auto;
+  }
+
+  .header-text {
+    gap: 1em;
+    width: 80%;
+  }
+
+  .titre {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .job {
+    font-size: 1.5em;
+  }
+
+  .latest-img {
+    width: 30vw;
+  }
+
+  .h2-home {
+    font-size: 25px;
+    max-width: 90%;
+    margin: 0 auto 1em auto;
+  }
+
+  .h3-home {
+    font-size: 20px;
+  }
+
+  .bio,
+  .contact {
+    padding: 2em 1em;
+  }
+
+  .bio-text,
+  .contact-text {
+    max-width: 80%;
+    font-size: 16px;
+  }
+
+  .header-img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header-img {
+    height: 30vh;
+  }
+
+  .sub-logo {
+    height: 25vw;
+  }
+}
+
+@media screen and (max-height: 690px) {
+  .header-img {
+    height: 130vh;
+  }
+
+  .titre {
+    font-size: 30px;
+  }
+}

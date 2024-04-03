@@ -1,0 +1,196 @@
+/* hero */
+
+header {
+  position: relative;
+  height: auto;
+  margin-bottom: 10em;
+}
+.header-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+.titre {
+  font-size: 42px;
+  text-align: center;
+}
+.sub-logo {
+  width: auto;
+  height: 10vw;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 48%);
+  fill: black;
+}
+
+.about-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 42px;
+  max-width: 70%;
+  margin: 0 auto 2.5em auto;
+}
+
+/* page de contact */
+
+.contact-info {
+  background-color: #fceccc;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-height: 500px;
+  padding: 5em 3em;
+  overflow: hidden;
+  max-width: 100%;
+}
+.contact-info-text {
+  text-align: start;
+  font-size: 16px;
+  max-width: 100%;
+}
+.titre-contact {
+  text-align: start;
+  font-size: 1.3em;
+  margin-bottom: 1.2em;
+}
+
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 4.5em;
+  padding: 5em;
+}
+
+.contact-details-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  grid-row-gap: 5em;
+  max-width: 100%;
+  margin: 0 auto 5em auto;
+}
+
+.request-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  grid-row-gap: 5em;
+  max-width: 100%;
+  margin: 0 auto 5em auto;
+}
+
+.textarea {
+  width: 100%;
+  height: 140px;
+  resize: none;
+  overflow: scroll;
+  padding: 1em;
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.date,
+.prices,
+.known {
+  background-color: #ffffff;
+  border: 1px solid black;
+  height: 60px;
+  width: 100%;
+  padding: 1em;
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.submit-button {
+  padding: 0.2em 1.5em;
+  border: 2px solid black;
+  border-radius: 23px;
+  background-color: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  max-width: 20%;
+}
+
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.radio-button-container > label {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.radio {
+  height: 30px;
+  width: 30px;
+  margin-right: 1em;
+  accent-color: #004e56;
+}
+.contact-details-container input {
+  padding: 1em;
+  margin-top: 1em;
+  height: 60px;
+  border: 0.5px solid black;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form-description {
+  grid-column: span 6;
+}
+.contact-form-title {
+  font-size: 26px;
+  margin-bottom: 2em;
+}
+.contact-form-text {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.contact-details-firstname,
+.contact-details-lastname {
+  grid-column: span 3;
+}
+
+.contact-details-email,
+.contact-details-activity {
+  grid-column: span 4;
+}
+
+.contact-details-phone,
+.contact-details-company {
+  grid-column: span 2;
+}
+
+.home-title {
+  font-size: 42px;
+  margin: 0 auto 2em auto;
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 80%;
+}
+
+/* formulaire resonsive */
