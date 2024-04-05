@@ -54,3 +54,9 @@ window.addEventListener('scroll', function () {
         hiddenMobileBlock.style.display = 'none';
     }
 });
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 480) {
+        hiddenMobileBlock.style.display = "none";
+    }
+});

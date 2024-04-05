@@ -21,11 +21,7 @@ em {
   font-style: oblique 10deg;
   font-weight: 800;
   margin: 0 2px;
-  line-height: 1em;
-}
-
-.title-italic {
-  font-weight: 600;
+  line-height: 0.5em;
 }
 
 
@@ -44,7 +40,7 @@ em {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5px 0;
+  height: auto;
   
 }
 
@@ -54,7 +50,7 @@ em {
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
-  gap: 1em;
+  gap: 1.5em;
   font-weight: 500;
   flex-grow: 1;
   flex-basis: 0;
@@ -64,7 +60,7 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 35px 0;
   gap: 3px;
   
 }
@@ -115,16 +111,18 @@ li {
 a {
   color: black;
   text-decoration: none;
+  
 }
 
 .logo-link {
 
   display: flex;
   justify-content: center;
+  width: 12%;
 }
 .logo {
-  width: 175px;
-  height: auto;
+  width: auto;
+  height: 80px;
 }
 
 .nav-button {
@@ -140,13 +138,43 @@ a {
   display: none;
 }
 
+@media (hover: none) {
+  
+  .nav-link-container, .nav-button-container {
+    display: none;
+  }
+.nav-bar {
+  position: static;
+}
+.nav {
+  position: relative;
+  
+}
+
+  #nav-mobile-menu {
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .logo {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ 
+}
+
 #mobile-scroll-container {
   max-height: 500px;
   height: auto;
 	width: 75%;
 	background-color: #ffffff;
 	position: absolute;
-	top: 55px;
+	top: 61px;
   left: 20%;
 	display: flex;
 	justify-content: center;
@@ -214,12 +242,12 @@ input {
 }
 
 .footer-title {
-  font-size: 26px;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 
 .footer-link {
-  font-size: 20px;
+  font-size: 1.2em;
   color: #ffffff;
 }
 
@@ -257,7 +285,7 @@ input {
   background-color: #fceccc;
   width: 100%;
   height: auto;
-  padding: 10% 10%;
+  padding: 10%;
   margin: 7% auto;
   display: flex;
   flex-direction: column;
@@ -282,14 +310,7 @@ input {
 /* responsive bar de navigation et footer */
 
 @media screen and (max-width: 1300px) {
-  .nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .logo {
-    width: 120px;
-  }
-
+ 
   .nav-button {
     font-size: 1em;
   }
@@ -303,28 +324,26 @@ input {
   .menu-scroll {
     margin: 0 1%;
   }
+
+  .logo {
+    height: 50px;
+  }
+
+  .nav {
+    height: 85px;
+  }
+
+  #menu-scroll-container {
+    top: 54px;
+  }
+
 }
 
 @media screen and (max-width: 1030px) {
-  .nav {
-    gap: 2.5em;
-    padding: 1em;
-    position: static;
-  }
-  .nav-bar {
-    position: static;
-  }
-  .nav-left {
-    order: 2;
-  }
-
+  
   .footer-container {
     justify-content: space-evenly;
     gap: 0;
-  }
-
-  .h2-bio, .h2-global {
-    font-size: 28px;
   }
 }
 
@@ -342,16 +361,11 @@ input {
   .square {
     height: 200px;
   }
-  .h2-global {
-    font-size: 25px;
-    max-width: 90%;
-    margin: 0 auto 1em auto;
-  }
 }
 
-/* Affichage Mobile */
+/* Affichage Nav Bar Tactile */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 870px) {
 
   .nav-link-container, .nav-button-container {
     display: none;
@@ -381,3 +395,4 @@ input {
     height: 100px;
   }
 }
+
