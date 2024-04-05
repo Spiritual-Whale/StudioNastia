@@ -60,3 +60,4 @@ window.addEventListener('resize', function() {
         hiddenMobileBlock.style.display = "none";
     }
 });
+

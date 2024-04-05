@@ -211,7 +211,7 @@ Dernière Réalisation */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
   row-gap: 1.5em;
-  column-gap: 10em;
+  column-gap: 5em;
   width: 60%;
   margin: auto;
 }
