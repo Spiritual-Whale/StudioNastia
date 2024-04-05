@@ -1,4 +1,4 @@
-/* Images Hero */
+/* Header */
 
 .header {
   position: relative;
@@ -26,10 +26,7 @@
   flex-direction: column;
   gap: 2em;
 }
-.titre {
-  font-size: 42px;
-  text-align: center;
-}
+
 .services {
   color: #ffffff;
   font-size: 1.5em;
@@ -51,49 +48,65 @@
   fill: black;
 }
 
-/* page principale */
+/* Typographie */
 
-.block-1 {
+.home-main-text {
+  max-width: 70%;
+  line-height: 1.6em;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto 3em auto;
+  font-size: 1.2em;
+}
+
+.h1-home {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: start;
+  max-width: 70%;
+  margin: auto;
+}
+
+.h2-home {
+  font-size: 2.5rem;
+  margin: 0 auto 2em auto;
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 50%;
+  font-weight: 600;
+  font-style: oblique 10deg;
+}
+
+.h3-home {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: oblique 10deg;
+}
+
+.block-text {
+  margin: 1.5em auto;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.tools-text {
+  text-align: justify;
+  font-size: 1.2em;
+  max-width: 450px;
+  hyphens: auto;
+  height: 150px;
+  overflow: hidden;
+}
+
+/* Mise en Page  */
+
+.home-intro-text {
   text-align: center;
   margin: 3em auto 5em auto;
   width: 100%;
   line-height: 2em;
 }
-
-.h2-home {
-  font-size: 42px;
-  margin: 0 auto 2em auto;
-  line-height: 1.5em;
-  text-align: center;
-  max-width: 100%;
-  font-weight: 500;
-}
-
-.h3-home {
-  font-size: 26px;
-  font-weight: 500;
-}
-
-.italic {
-  font-style: italic;
-  font-weight: bolder;
-}
-
-.intro-text-home {
-  max-width: 70%;
-  line-height: 1.6em;
-  text-align: center;
-  font-family: sans-serif;
-  max-width: 60%;
-}
-.main-text,
-.intro-text-home {
-  margin: 1.5em auto;
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
-
 .block {
   display: flex;
   justify-content: center;
@@ -102,6 +115,17 @@
   max-width: 100%;
   margin-top: 8%;
 }
+
+.block-text-right,
+.block-text-left {
+  margin-top: 3%;
+  width: 30%;
+}
+
+.block-text-right {
+  text-align: right;
+}
+
 .block-img {
   width: 45%;
   max-width: 100%;
@@ -113,24 +137,6 @@
   width: 30%;
   margin-left: 15%;
   max-width: 100%;
-}
-
-.block-text-right,
-.block-text-left {
-  line-height: 1.6em;
-  font-size: 20px;
-  margin-top: 3%;
-  font-family: sans-serif;
-}
-
-.block-text-right {
-  text-align: right;
-  width: 30%;
-  font-family: sans-serif;
-}
-
-.block-text-left {
-  width: 35%;
 }
 
 .vertical-img {
@@ -149,6 +155,8 @@
   margin-top: 3%;
   margin-left: 32%;
 }
+/* 
+Dernière Réalisation */
 
 .latest {
   display: flex;
@@ -178,7 +186,8 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-/* LA BIO CONTAINER DANS GLOBAL  */
+
+/* ressources offertes */
 
 .tools-container {
   display: flex;
@@ -203,27 +212,26 @@
   aspect-ratio: 1 / 1.2;
 }
 
-.tools-text {
-  text-align: justify;
-  font-size: 20px;
-  max-width: 450px;
-  hyphens: auto;
-  height: 150px;
-  overflow: hidden;
-}
-/* formulaire de contact home page */
+/* formulaire de contact */
 
 .home-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   gap: 1.5em;
   border: none;
   margin-bottom: 2em;
 }
 
+.home-input-container {
+	display: flex;
+	gap: 1em;
+	margin-bottom: 4em;
+  width: 50%;
+}
+
 .home-form-label {
-  width: 70%;
+  max-width: 70%;
 }
 
 .label-text {
@@ -231,20 +239,17 @@
   font-size: 20px;
   margin-bottom: 0.5em;
   display: inline-block;
-  font-family: sans-serif;
 }
 
-.home-name,
+.home-name {
+  width: 35%
+}
 .home-email {
-  padding: 0.5em 1.8em;
-  border: 2px solid black;
-  border-radius: 24px;
-  font-size: 20px;
-  display: block;
-  width: 100%;
+width: 65%;
 }
+ 
 
-/* Responsive Home Page */
+/* Responsive */
 
 @media screen and (max-width: 1300px) {
   .titre {
@@ -424,9 +429,11 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+/* Affichage Mobile  */
+
+@media screen and (max-width: 480px) {
   .header-img {
-    height: 30vh;
+    height: 75vh;
   }
 
   .sub-logo {

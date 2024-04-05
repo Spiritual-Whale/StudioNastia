@@ -58,13 +58,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1em;
 }
 .about-value-square {
     background-color: #E5EDE4;
     border-radius: 60px;
     height: auto;
-    width: 15vw;
+    width: 330px;
     aspect-ratio: 1/1.15;
     display: flex;
     justify-content: flex-start;
