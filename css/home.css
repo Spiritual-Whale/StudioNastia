@@ -11,6 +11,16 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-height : 500px)  {
+  .header-img {
+    height: 120vh;
+  }
+
+  .sub-logo {
+    width: 100px;
+  }
+}
+
 .sub-logo {
   width: 195px;
   height: auto;
@@ -200,6 +210,7 @@ Dernière Réalisation */
 
   .latest-img:hover {
     transition: none;
+    transform: none;
   }
 }
 
