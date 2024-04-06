@@ -22,59 +22,6 @@ menuHover.addEventListener('mouseleave', function() {
     }, 150);
 } )
 
-// Menu Déroulant Version Mobile
-
-// const menuMobileClick = document.getElementById('nav-mobile-menu');
-// const hiddenMobileBlock = document.getElementById('mobile-scroll-container');
-
-
-// menuMobileClick.addEventListener('click', function () {
-    
-//     if (window.getComputedStyle(hiddenMobileBlock).display === 'flex' || window.scrollY > 200) {
-        
-//         hiddenMobileBlock.style.transform = "translateY(0px)";
-//         hiddenMobileBlock.style.opacity = "0";
-//         setTimeout(() => {
-            
-        
-//         hiddenMobileBlock.style.display = 'none';
-//     }, 150);
-//     } else {
-        
-//         hiddenMobileBlock.style.display = 'flex';
-//         hiddenMobileBlock.style.transform = 'translateY(0px)';
-//         hiddenMobileBlock.offsetHeight;
-//         hiddenMobileBlock.style.transform = 'translateY(24px)';
-//         hiddenMobileBlock.style.opacity = '1';
-//     }
-// });
-
-// window.addEventListener('scroll', function () {
-    
-//     if (window.getComputedStyle(hiddenMobileBlock).display === 'flex' && window.scrollY > 600) {
-//         hiddenMobileBlock.style.display = 'none';
-//     }
-// });
-
-// window.addEventListener('resize', function() {
-//     if (window.innerWidth > 480) {
-//         hiddenMobileBlock.style.display = "none";
-//     }
-// });
-
-// document.addEventListener('click', function(event) {
-//     // Vérifier si le clic n'est pas sur le menu mobile ou ses enfants
-//     if (!menuMobileClick.contains(event.target) && !hiddenMobileBlock.contains(event.target)) {
-//         // Si le menu mobile est ouvert, le fermer
-//         if (window.getComputedStyle(hiddenMobileBlock).display === 'flex') {
-//             hiddenMobileBlock.style.transform = "translateY(0px)";
-//             hiddenMobileBlock.style.opacity = "0";
-//             setTimeout(() => {
-//                 hiddenMobileBlock.style.display = 'none';
-//             }, 150);
-//         }
-//     }
-// });
 
 // Sélection des éléments DOM
 const menuMobileClick = document.getElementById('nav-mobile-menu');
@@ -96,7 +43,7 @@ function toggleMobileMenu() {
 function showMobileMenu() {
     // Définir les styles pour afficher le menu
     hiddenMobileBlock.style.display = 'flex';
-    hiddenMobileBlock.style.transform = 'translateY(24px)';
+    hiddenMobileBlock.style.transform = 'translateY(-24px)';
     hiddenMobileBlock.offsetHeight; // Forcer un reflow pour activer l'animation
     hiddenMobileBlock.style.transform = 'translateY(0px)';
     hiddenMobileBlock.style.opacity = '1';
@@ -105,7 +52,7 @@ function showMobileMenu() {
 // Fonction pour cacher le menu mobile
 function hideMobileMenu() {
     // Définir les styles pour cacher le menu avec une transition de sortie
-    hiddenMobileBlock.style.transform = "translateY(0px)";
+    hiddenMobileBlock.style.transform = "translateY(-24px)";
     hiddenMobileBlock.style.opacity = "0";
     // Utiliser setTimeout pour définir un délai avant de masquer définitivement le menu
     setTimeout(() => {
@@ -140,5 +87,14 @@ document.addEventListener('click', function(event) {
         if (window.getComputedStyle(hiddenMobileBlock).display === 'flex') {
             hideMobileMenu();
         }
+    }
+});
+
+window.addEventListener("resize", function() {
+    var headerImage = document.getElementById("headerImage");
+    if (window.innerWidth > window.innerHeight) {
+        headerImage.style.height = "120vh"; // Mode paysage
+    } else {
+        headerImage.style.height = "70vh"; // Mode portrait
     }
 });

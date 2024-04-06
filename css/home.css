@@ -480,17 +480,3 @@ Mise en page Mobile et Tablette */
     max-width: 100%;
   }
 }
-
-/* Affichage Mobile  */
-
-@media screen and (max-width: 480px) {
-  .header-img {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-height: 690px) {
-  .header-img {
-    height: 120vh;
-  }
-}
