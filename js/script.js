@@ -32,7 +32,7 @@ function toggleMobileMenu() {
     // Obtenir le style d'affichage actuel du menu mobile
     const displayStyle = window.getComputedStyle(hiddenMobileBlock).display;
     // Si le menu est déjà ouvert ou si le défilement vertical dépasse 200 pixels, le fermer
-    if (displayStyle === 'flex' || window.scrollY > 200) {
+    if (displayStyle === 'flex') {
         hideMobileMenu(); // Appeler la fonction pour cacher le menu
     } else {
         showMobileMenu(); // Sinon, appeler la fonction pour afficher le menu
@@ -90,11 +90,3 @@ document.addEventListener('click', function(event) {
     }
 });
 
-window.addEventListener("resize", function() {
-    var headerImage = document.getElementById("headerImage");
-    if (window.innerWidth > window.innerHeight) {
-        headerImage.style.height = "120vh"; // Mode paysage
-    } else {
-        headerImage.style.height = "70vh"; // Mode portrait
-    }
-});
