@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/tom5dmm.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/czu7yjm.css" />
   </head>
 
   <body>
@@ -14,51 +16,89 @@
 
     <nav class="nav-bar">
       <ul class="nav">
-          <div class="nav-link-container">
-              <div class="menu-scroll">
-              <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
-              <object data="img/triangle.svg" type="image/svg+xml" class="triangle"></object>
-          </div>
+        <div class="nav-link-container">
           <div class="menu-scroll">
-              <li><a href="#" class="menu-list">PRESTATIONS</a></li>
-              <object data="img/triangle.svg" type="image/svg+xml" class="triangle"></object>
+            <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
+            <object
+              data="img/triangle.svg"
+              type="image/svg+xml"
+              class="triangle"
+            ></object>
           </div>
-              <li><a href="about.html" class="menu-list">A PROPOS</a></li>
+          <div class="menu-scroll" id="menu-scroll-middle">
+            <li><a href="#" class="menu-list">PRESTATIONS</a></li>
+            <object
+              data="img/triangle.svg"
+              type="image/svg+xml"
+              class="triangle"
+            ></object>
+            <div id="menu-scroll-container">
+              <li><a href="#"><p class="menu-scroll-text">IDENTITÉ VISUELLE</p></a></li>
+              <li><a href="#"><p class="menu-scroll-text">WEBDESIGN</p></a></li>
+              <li><a href="#"><p class="menu-scroll-text">COMMUNITY MANAGER</p></a></li>
+            </div>
           </div>
-          
-          <a href="index.html" class="logo-link"><img src="img/Logo principal.svg" class="logo" alt="NastiaStudio"></a>
-          
-          
-              <div class="nav-button-container">
-              <li><a href="#" class="nav-button">BOUTIQUE</a></li>
-              <li><a href="contact.html" class="nav-button">CONTACT</a></li>
-              </div>
-              
-              
-                      
-                          </ul>
-                      </nav>
+
+          <li><a href="about.html" class="menu-list">A PROPOS</a></li>
+        </div>
+
+        <a href="index.html" class="logo-link"
+          ><img src="img/Logo principal.svg" class="logo" alt="NastiaStudio"
+        /></a>
+
+        <div class="nav-button-container">
+          <li><a href="#" class="nav-button">BOUTIQUE</a></li>
+          <li><a href="contact.html" class="nav-button">CONTACT</a></li>
+        </div>
+        <img src="img/menu-svgrepo-com.svg" width="30px" height="auto"
+        id="nav-mobile-menu">
+      </ul>
+     
+      
+      <div id="mobile-scroll-container" class="mobile-dropdown-menu">
+
+        <a href="#" class="menu-scroll-text">RÉALISATION</a>
+        <div class="dropdown-menu-line"></div>
+
+        <a href="#" class="menu-scroll-text">PRESTATIONS</a>
+        <div class="dropdown-menu-line"></div>
+
+        <a href="#" class="dropdown-menu-services">IDENTITÉ VISUELLE</a>
+        <div class="dropdown-menu-line-services"></div>
+
+        <a href="#" class="dropdown-menu-services">WEBDESIGN</a>
+        <div class="dropdown-menu-line-services"></div>
+
+        <a href="#" class="dropdown-menu-services">COMMUNITY MANAGER</a>
+        <div class="dropdown-menu-line"></div>
+
+        <a href="about.html" class="menu-scroll-text">À PROPOS</a>
+        <div class="dropdown-menu-line"></div>
+
+        <a href="#" class="menu-scroll-text">BOUTIQUE</a>
+        <div class="dropdown-menu-line"></div>
+
+        <a href="contact.html" class="menu-scroll-text">CONTACT</a>
+
+      </div>
+    </nav>
 
     <!-- header principal ::::::::: -->
 
     <header class="header">
       <img src="img/contact-picture-1280px-min.jpg" alt="" class="header-img" />
       <div class="header-text">
-        <h1 class="titre">
+        <h1 class="h1-contact">
           Travaillons <span class="italic">ensemble</span> pour concrétiser
           votre projet
         </h1>
       </div>
-      <object
-        data="img/Submark.svg"
-        type="image/svg+xml"
-        class="sub-logo"
-      ></object>
+      <img src="img/Submark.svg" class="sub-logo" />
     </header>
     <main>
       <!-- formulaire de contact  ::::::::::::::::::::-->
 
-      <h2 class="about-title">
+      <h2 class="h2-contact">
         Prêt(e) à embrasser le changement, et à propulser votre entreprise vers
         de nouveaux horizons ?
       </h2>
@@ -104,26 +144,26 @@
             </div>
 
             <div class="contact-details-firstname">
-              <label for="firstname">NOM: </label
+              <label for="firstname">NOM <span class="asterisque">*</span></label
               ><input type="text" id="firstname" />
             </div>
             <div class="contact-details-lastname">
-              <label for="lastname">PRÉNOM: </label
+              <label for="lastname">PRÉNOM <span class="asterisque">*</span></label
               ><input type="text" id="lastname" />
             </div>
             <div class="contact-details-email">
-              <label for="email">E-MAIL: </label
+              <label for="email">E-MAIL <span class="asterisque">*</span></label
               ><input type="email" id="email" />
             </div>
             <div class="contact-details-phone">
-              <label for="tel">TÉLÉPHONE: </label><input type="tel" id="tel" />
+              <label for="tel">TÉLÉPHONE <span class="asterisque">*</span></label><input type="tel" id="tel" />
             </div>
             <div class="contact-details-company">
-              <label for="company">NOM DE L'ENTREPRISE: </label
+              <label for="company">NOM DE L'ENTREPRISE <span class="asterisque">*</span></label
               ><input type="text" id="company" />
             </div>
             <div class="contact-details-activity">
-              <label for="activity">VOTRE ACTIVITÉ: </label
+              <label for="activity">VOTRE ACTIVITÉ <span class="asterisque">*</span></label
               ><input type="text" id="activity" />
             </div>
           </section>
@@ -131,7 +171,7 @@
             <div class="request-details">
               <label for="radio"
                 >PAR QUEL(S) SERVICE(S) DE NASTIA STUDIO ÊTES-VOUS INTÉRESSÉ(E)?
-                *</label
+                <span class="asterisque">*</span></label
               >
 
               <div class="radio-button-container">
@@ -175,13 +215,13 @@
             </div>
             <div class="request-details">
               <label for="date"
-                >QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ? *</label
+                >QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ? <span class="asterisque">*</span></label
               >
               <input type="date" id="date" class="date" />
             </div>
             <div class="request-details">
               <label for="prices"
-                >QUEL EST VOTRE BUDGET POUR CE PROJET ? *</label
+                >QUEL EST VOTRE BUDGET POUR CE PROJET ? <span class="asterisque">*</span></label
               >
               <select name="prices" id="prices" class="prices">
                 <option value="1000-2000" selected>1000€ - 2000€</option>
@@ -197,7 +237,7 @@
               <textarea name="" id="" class="textarea"></textarea>
             </div>
             <div class="request-details">
-              <label for="">COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ? *</label>
+              <label for="">COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ? <span class="asterisque">*</span></label>
               <select name="" id="" class="known">
                 <option value="" selected>Instagram</option>
                 <option value="">TikTok</option>
@@ -216,7 +256,8 @@
         <div class="square"></div>
       </div>
 
-      <p class="home-title">RETROUVEZ MOI ÉGALEMENT ICI !</p>
+      <p class="h2-home">RETROUVEZ MOI ÉGALEMENT ICI !</p>
+      <script src="js/script.js"></script>
     </main>
     <!-- pied de page :::::::::::::::::::::::::::::::::::::::::  -->
     <footer class="footer">

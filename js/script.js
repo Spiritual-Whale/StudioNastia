@@ -66,7 +66,7 @@ menuMobileClick.addEventListener('click', toggleMobileMenu);
 // Écouter les événements de défilement de la fenêtre
 window.addEventListener('scroll', function () {
     // Si le menu mobile est ouvert et que le défilement vertical dépasse 600 pixels, le fermer
-    if (window.getComputedStyle(hiddenMobileBlock).display === 'flex' && window.scrollY > 600) {
+    if (window.getComputedStyle(hiddenMobileBlock).display === 'flex' && window.scrollY > 800) {
         hideMobileMenu();
     }
 });

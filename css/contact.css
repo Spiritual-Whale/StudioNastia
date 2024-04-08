@@ -1,16 +1,5 @@
 /* hero */
 
-header {
-  position: relative;
-  height: auto;
-  margin-bottom: 10em;
-}
-.header-img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
 
 .header-text {
   color: #ffffff;
@@ -26,27 +15,15 @@ header {
   flex-direction: column;
   gap: 2em;
 }
-.titre {
-  font-size: 42px;
-  text-align: center;
-}
-.sub-logo {
-  width: auto;
-  height: 10vw;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 48%);
-  fill: black;
-}
 
-.about-title {
+.h2-contact {
+  font-size: 2.5rem;
+  margin: 3em auto;
+  line-height: 1.5em;
   text-align: center;
-  font-weight: 500;
-  font-size: 42px;
-  max-width: 70%;
-  margin: 0 auto 2.5em auto;
+  max-width: 60%;
+  font-weight: 600;
+  font-style: oblique 10deg;
 }
 
 /* page de contact */
@@ -147,7 +124,9 @@ header {
   height: 30px;
   width: 30px;
   margin-right: 1em;
-  accent-color: #004e56;
+  accent-color: #ed6f4b;
+  margin-top: 0;
+  
 }
 
 .contact-form-description {
@@ -177,12 +156,20 @@ header {
   grid-column: span 2;
 }
 
-.home-title {
-  font-size: 42px;
-  margin: 0 auto 2em auto;
-  line-height: 1.5em;
+.h1-contact {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
   text-align: center;
-  max-width: 80%;
+  max-width: 60%;
+  margin: auto;
+  line-height: 1.5em;
+  font-style: oblique 10deg;
+}
+
+.asterisque {
+  color: #ed6f4b;
+  font-size: 1.5em;
 }
 
 /* formulaire resonsive */
