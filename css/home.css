@@ -60,6 +60,10 @@
   margin-top: 5em;
 }
 
+.home-intro-text > .home-main-text {
+  max-width: 60%;
+}
+
 .h3-home {
   font-size: 26px;
   font-weight: 600;
