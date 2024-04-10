@@ -26,7 +26,7 @@
   font-weight: 550;
 }
 
-.home-main-text {
+.home-main-text{
   max-width: 45%;
   line-height: 1.6em;
   text-align: center;
@@ -163,14 +163,14 @@ Dernière Réalisation */
   max-width: 100%;
   gap: 10px;
   margin: 0 auto 3% auto;
-  flex-wrap: wrap;
 }
 
 .latest-img {
-  width: 300px;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 1 / 1.15;
+	max-height: 350px;
+	width: 90%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1.15;
+	height: auto;
 }
 
 @media (hover: none) {
@@ -349,7 +349,11 @@ Dernière Réalisation */
   /* Taille des fonts */
 
   .h1-home {
-    font-size: 36px;
+    font-size: 34px;
+  }
+
+  .services, .job {
+    font-size: 21px;
   }
 
   .h2-home {
@@ -400,6 +404,11 @@ Mise en page Mobile et Tablette */
     margin: 0 auto 1em auto;
   }
 
+  .home-intro-text > .home-main-text {
+    text-align: center;
+    max-width: 90%;
+  }
+
   .vertical-img {
     width: 50%;
     margin-left: 13%;
@@ -423,7 +432,7 @@ Mise en page Mobile et Tablette */
   }
 
   .job {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .services {
@@ -485,9 +494,11 @@ Mise en page Mobile et Tablette */
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .h1-home {
     font-size: 21px;
+    word-spacing: -1px;
+    font-weight: bold;
   }
 
   .job {
@@ -508,3 +519,4 @@ Mise en page Mobile et Tablette */
     height: 120vh;
   }
 }
+
