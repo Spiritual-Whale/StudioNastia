@@ -145,6 +145,7 @@ a {
   cursor: pointer;
   font-size: 20px;
   font-family: "mastro-display", sans-serif;
+  color: black;
 }
 #nav-mobile-menu {
   display: none;
@@ -401,6 +402,10 @@ input {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 1.5em 1.5em;
+  }
+
+  .footer-link, .footer-copyright-text {
+    font-size: 12px;
   }
 
   .bio,
