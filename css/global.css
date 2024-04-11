@@ -167,9 +167,7 @@ a {
   .nav-button-container {
     display: none;
   }
-  .nav-bar {
-    position: static;
-  }
+  
   .nav {
     position: relative;
   }
@@ -279,7 +277,7 @@ input {
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1.5em;
+  gap: 0.7em;
   text-align: center;
 }
 
@@ -313,7 +311,7 @@ input {
 .footer-social-icons {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(103%)
     contrast(101%);
-  width: 30px;
+  width: 15px;
   height: auto;
   cursor: pointer;
   margin-right: 4px;
@@ -404,6 +402,9 @@ input {
     gap: 1.5em 1.5em;
   }
 
+  .footer-title {
+    font-size: 16px;
+  }
   .footer-link, .footer-copyright-text {
     font-size: 12px;
   }

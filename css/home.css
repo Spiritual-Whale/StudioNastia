@@ -358,10 +358,14 @@ Dernière Réalisation */
     height: 50px;
   }
 
+  .nav-button {
+    border: 1px solid black;
+  }
+
   /* Taille des fonts */
 
   .h1-home {
-    font-size: 34px;
+    font-size: 45px;
   }
 
   .services, .job {
@@ -369,7 +373,7 @@ Dernière Réalisation */
   }
 
   .h2-home {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .h3-home {
