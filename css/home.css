@@ -82,33 +82,44 @@
   padding: 0 7.5vw;
 }
 
-.block-1,
-.block-2,
-.block-3 {
+.block-2 {
   display: flex;
   align-items: flex-start;
   gap: 4%;
   max-width: 100%;
-  margin-top: 8%;
-}
-
-.block-1 {
-  justify-content: flex-start;
-}
-
-.block-2 {
+  margin-top: 13%;
   justify-content: flex-end;
 }
 
+.block-1 {
+  display: grid;
+  grid-template-columns: 50% 39%;
+  gap: 4%;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.block-3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  margin-top: 8%;
+  margin-left: 16%;
+}
+
+.block-3 > .block-text-left {
+  width: 63%;
+}
+
 .block-text-right {
-  margin-top: 3%;
+  margin-top: 2em;
   width: 29%;
   text-align: right;
 }
 
 .block-text-left {
-  width: 39%;
-  margin-top: 3%;
+  width: 100%;
+  margin-top: 2em;
 }
 
 .block-img-1,
@@ -118,33 +129,34 @@
 }
 
 .block-img-1 {
-  width: 50%;
+  width: 100%;
 }
 .block-img-2 {
   width: 60%;
 }
 .block-img-vertical {
   height: auto;
-  width: 34%;
-  margin-left: 16%;
+  width: 89%;
   max-width: 100%;
 }
 
 .vertical-img {
   height: auto;
-  width: 30%;
+  width: 37%;
   max-width: 100%;
   display: block;
-  margin-left: 28%;
+  margin-left: 23%;
   margin-top: 4%;
+  grid-column: span 2;
 }
 
 .last-img {
   height: auto;
-  width: 45%;
+  width: 60%;
   max-width: 100%;
   margin-top: 3%;
-  margin-left: 28%;
+  margin-left: 5%;
+  grid-column: span 2;
 }
 /* 
 Dernière Réalisation */
@@ -181,14 +193,15 @@ Dernière Réalisation */
     justify-content: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 2em;
+    padding: 0 36px;
     overflow-y: hidden;
   }
   .latest-img-gallery::-webkit-scrollbar {
     display: none;
   }
   .latest-img {
+    height: 210px;
     width: auto;
-    height: 300px;
   }
 
   .latest-img:hover {
@@ -330,7 +343,6 @@ Dernière Réalisation */
   .block-text-left {
     margin-top: 0;
     margin-bottom: 1em;
-    width: 55vw;
     font-size: 16px;
   }
 
@@ -383,17 +395,30 @@ Dernière Réalisation */
 Mise en page Mobile et Tablette */
 
 @media screen and (max-width: 750px) {
-  .block-1,
-  .block-2,
-  .block-3 {
+  .block-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .block-2 {
     padding: 0.5em;
     flex-direction: column;
+    margin-top: 1em;
+  }
+
+  .block-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 8% auto;
+    align-items: center;
   }
 
   .block-img-1,
   .block-img-2 {
     width: 85%;
-    margin: 0 auto 1.2em auto;
+    margin: 1.2em auto 1.2em auto;
   }
 
   .block-text-right,
@@ -401,18 +426,23 @@ Mise en page Mobile et Tablette */
     width: 85%;
     order: 1;
     text-align: center;
-    margin: 0 auto 1em auto;
+    margin: 1em auto 1em auto;
+  }
+
+  .block-3 > .block-text-left {
+    margin: 5% auto;
+    width: 85%;
   }
 
   .home-intro-text > .home-main-text {
     text-align: center;
     max-width: 90%;
+    margin-top: 3em;
   }
 
   .vertical-img {
     width: 50%;
-    margin-left: 13%;
-    margin-top: 5%;
+    margin: 5% auto 1em auto;
   }
 
   .block-img-vertical {
@@ -421,9 +451,8 @@ Mise en page Mobile et Tablette */
   }
 
   .last-img {
-    width: 70%;
-    margin-top: 3%;
-    margin-left: 20%;
+    margin: 1em auto;
+    width: 85%;
   }
 
   .header-text {
@@ -455,15 +484,20 @@ Mise en page Mobile et Tablette */
   .home-main-text,
   .block-text,
   .tools-text {
-    max-width: 90%;
+    width: 100%;
     text-align: start;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
 
-  .bio,
-  .contact {
-    padding: 1.5em 0.5em;
+  .home-main-text {
+    min-width: 95%;
   }
+
+  .tools-text {
+    margin-bottom: 0;
+  }
+
+ 
 
   .home-input-container {
     width: 90%;
@@ -474,7 +508,7 @@ Mise en page Mobile et Tablette */
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    width: 60%;
+    width: 100%;
   }
   .tools-container > .nav-button {
     width: 200px;
@@ -484,9 +518,11 @@ Mise en page Mobile et Tablette */
   .tools-container > .h3-home {
     margin: 25px 0 15px 0;
   }
-
+  .tools-container > :nth-child(3), .tools-container > :nth-child(7) {
+    max-width: 85%;
+  }
   .tools-img {
-    max-width: 100%;
+    max-width: 65%;
   }
 
   .home-core {
@@ -508,6 +544,7 @@ Mise en page Mobile et Tablette */
   .services {
     font-size: 16px;
   }
+
 }
 
 @media screen and (max-height: 450px) {
