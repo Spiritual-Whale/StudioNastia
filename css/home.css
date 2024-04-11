@@ -429,6 +429,10 @@ Mise en page Mobile et Tablette */
     margin: 1em auto 1em auto;
   }
 
+  .nav-button {
+    font-size: 12px;
+  }
+
   .block-3 > .block-text-left {
     margin: 5% auto;
     width: 85%;
@@ -473,7 +477,7 @@ Mise en page Mobile et Tablette */
   }
 
   .h3-home {
-    font-size: 18px;
+    font-size: 16px;
   }
   .h2-home {
     margin: 0 auto 1em auto;
@@ -512,7 +516,7 @@ Mise en page Mobile et Tablette */
     width: 100%;
   }
   .tools-container > .nav-button {
-    width: 200px;
+    width: auto;
     margin-bottom: 2.5em;
   }
 
@@ -538,12 +542,8 @@ Mise en page Mobile et Tablette */
     font-weight: bold;
   }
 
-  .job {
-    font-size: 16px;
-  }
-
-  .services {
-    font-size: 16px;
+  .job, .services  {
+    font-size: 13px;
   }
 
 }
