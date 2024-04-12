@@ -380,6 +380,12 @@ input {
 
 @media screen and (max-width: 1023px) {
   
+
+  .header-img {
+    
+    object-position: 40%;
+  }
+
   /* barre de navigation */
   
   .nav {
@@ -427,7 +433,7 @@ input {
 
 /* Responsive Mobile */
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 600px) {
 
   input {
     font-size: 13px;
@@ -463,5 +469,8 @@ input {
     font-size: 15px;
   }
 
+  .header-img {
+    object-position: 30%;
+  }
 }
 
