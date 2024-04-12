@@ -553,7 +553,7 @@ Dernière Réalisation */
   
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 500px) {
   .sub-logo {
     width: 125px;
   }
