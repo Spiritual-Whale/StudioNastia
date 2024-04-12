@@ -90,3 +90,17 @@ document.addEventListener('click', function(event) {
     }
 });
 
+let prevScrollPos = window.scrollY || window.pageYOffset;
+const navbar = document.getElementById("nav-bar");
+
+window.onscroll = function() {
+  let currentScrollPos = window.scrollY || window.pageYOffset;
+  
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+  }
+
+  prevScrollPos = currentScrollPos;
+}

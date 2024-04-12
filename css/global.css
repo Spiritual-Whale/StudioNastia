@@ -55,6 +55,8 @@ br {
   z-index: 6;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   padding: 0 7.5vw;
+  transition: ease 0.2s;
+
 }
 .nav {
   display: flex;
@@ -462,3 +464,4 @@ input {
   }
 
 }
+
