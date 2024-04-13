@@ -403,6 +403,10 @@ input {
     margin-left: auto;
   }
 
+  #mobile-scroll-container {
+    top: 100px;
+  }
+
   .logo {
     width: 140px;
     position: absolute;
@@ -486,3 +490,12 @@ input {
   }
 }
 
+@media only screen and (max-width: 900px) and (max-height: 900px) {
+  .nav-bar {
+    height: 67px;
+  }
+
+  .logo {
+    width: 95px;
+  }
+}
