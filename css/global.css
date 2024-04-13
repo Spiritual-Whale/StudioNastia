@@ -62,7 +62,7 @@ br {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100px;
+  height: 100%;
 }
 
 .nav-button-container,
@@ -187,7 +187,7 @@ a {
   }
 
   .nav-bar {
-    height: 85px;
+    height: 100px;
     position: fixed;
   }
 
@@ -388,8 +388,7 @@ input {
 
   /* barre de navigation */
   
-  .nav, .nav-bar {
-    height: 100px;
+  .nav {
     position: relative;
   }
   .nav-link-container,
@@ -482,7 +481,7 @@ input {
     
   }
 
-  .nav-bar, .nav {
+  .nav-bar {
     height: 67px;
   }
 }
