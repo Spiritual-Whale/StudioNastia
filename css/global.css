@@ -218,7 +218,7 @@ a {
   width: 75%;
   background-color: #ffffff;
   position: absolute;
-  top: 85px;
+  top: 100%;
   left: 20%;
   display: flex;
   justify-content: center;
@@ -403,9 +403,9 @@ input {
     margin-left: auto;
   }
 
-  #mobile-scroll-container {
+  /* #mobile-scroll-container {
     top: 100px;
-  }
+  } */
 
   .logo {
     width: 140px;
