@@ -51,7 +51,7 @@ br {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100px;
   z-index: 6;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   padding: 0 7.5vw;
@@ -62,7 +62,7 @@ br {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: auto;
+  height: 100px;
 }
 
 .nav-button-container,
@@ -110,7 +110,7 @@ br {
   width: 200%;
   background-color: #ffffff;
   position: absolute;
-  top: 66px;
+  top: 69px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -388,8 +388,8 @@ input {
 
   /* barre de navigation */
   
-  .nav {
-    height: 85px;
+  .nav, .nav-bar {
+    height: 100px;
     position: relative;
   }
   .nav-link-container,
@@ -405,7 +405,7 @@ input {
   }
 
   .logo {
-    width: 125px;
+    width: 140px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -471,6 +471,19 @@ input {
 
   .header-img {
     object-position: 30%;
+  }
+
+  #mobile-scroll-container {
+    top: 67px
+  }
+
+  .logo {
+    width: 95px;
+    
+  }
+
+  .nav-bar, .nav {
+    height: 67px;
   }
 }
 
