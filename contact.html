@@ -14,16 +14,11 @@
   <body>
     <!-- barre de navigation -->
 
-    <nav class="nav-bar">
+    <nav class="nav-bar" id="nav-bar">
       <ul class="nav">
         <div class="nav-link-container">
           <div class="menu-scroll">
             <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
-            <object
-              data="img/triangle.svg"
-              type="image/svg+xml"
-              class="triangle"
-            ></object>
           </div>
           <div class="menu-scroll" id="menu-scroll-middle">
             <li><a href="#" class="menu-list">PRESTATIONS</a></li>
@@ -33,9 +28,19 @@
               class="triangle"
             ></object>
             <div id="menu-scroll-container">
-              <li><a href="#"><p class="menu-scroll-text">IDENTITÉ VISUELLE</p></a></li>
-              <li><a href="#"><p class="menu-scroll-text">WEBDESIGN</p></a></li>
-              <li><a href="#"><p class="menu-scroll-text">COMMUNITY MANAGER</p></a></li>
+              <li>
+                <a href="#"
+                  ><p class="menu-scroll-text">IDENTITÉ VISUELLE</p></a
+                >
+              </li>
+              <li>
+                <a href="#"><p class="menu-scroll-text">WEBDESIGN</p></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><p class="menu-scroll-text">COMMUNITY MANAGER</p></a
+                >
+              </li>
             </div>
           </div>
 
@@ -50,13 +55,34 @@
           <li><a href="#" class="nav-button">BOUTIQUE</a></li>
           <li><a href="contact.html" class="nav-button">CONTACT</a></li>
         </div>
-        <img src="img/menu-svgrepo-com.svg" width="30px" height="auto"
-        id="nav-mobile-menu">
+        <svg
+          id="nav-mobile-menu"
+          width="24px"
+          height="18px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          stroke="#060708"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 6H20M4 12H20M4 18H20"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
       </ul>
-     
-      
-      <div id="mobile-scroll-container" class="mobile-dropdown-menu">
 
+      <div id="mobile-scroll-container" class="mobile-dropdown-menu">
         <a href="#" class="menu-scroll-text">RÉALISATION</a>
         <div class="dropdown-menu-line"></div>
 
@@ -79,31 +105,31 @@
         <div class="dropdown-menu-line"></div>
 
         <a href="contact.html" class="menu-scroll-text">CONTACT</a>
-
       </div>
     </nav>
 
     <!-- header principal ::::::::: -->
 
-    <header class="header">
-      <img src="img/contact-picture-1280px-min.jpg" alt="" class="header-img" />
+    <header class="header-contact">
+      <img src="img/contactheader-min.jpg" alt="" class="header-img" />
       <div class="header-text">
         <h1 class="h1-contact">
-          Travaillons <span class="italic">ensemble</span> pour concrétiser
+          Travaillons <span class="italic-title">ensemble</span> <br>pour concrétiser
           votre projet
         </h1>
       </div>
       <img src="img/Submark.svg" class="sub-logo" />
     </header>
-    <main>
+    <main class="contact-main">
       <!-- formulaire de contact  ::::::::::::::::::::-->
 
       <h2 class="h2-contact">
-        Prêt(e) à embrasser le changement, et à propulser votre entreprise vers
+        Prêt(e) à <em class="italic-title">embrasser le changement,</em> <br class="hide"> et à propulser votre entreprise vers
         de nouveaux horizons ?
       </h2>
 
       <div class="contact-grid-container">
+        <div class="contact-info-container">
         <div class="contact-info">
           <div>
             <p class="titre-contact">E-MAIL</p>
@@ -120,7 +146,22 @@
             <p class="titre-contact">LOCALISATION</p>
             <p class="contact-info-text">Lille, France</p>
           </div>
+          
         </div>
+        <div class="contact-info">
+          <div>
+            <p class="titre-contact">APPEL DÉCOUVERTE GRATUIT</p>
+            <p class="contact-info-text">Je vous invite à réserver un créneau horaire de 30 minutes afin de discuter de votre projet, 
+              explorer vos besoins, attentes et désirs, tout en permettant de mieux nous connaître.</p>
+          </div>
+          <div>
+            <p class="free-call-text">RÉSERVEZ VOTRE HORAIRE</p>
+          </div>
+          
+          
+        </div>
+      </div>
+        
         <form action="" id="contact-form">
           <section class="contact-details-container">
             <div class="contact-form-description">
@@ -128,13 +169,13 @@
                 VOUS AVEZ ENVIE DE RÉALISER UN PROJET ? PARLONS-EN ENSEMBLE !
               </h3>
               <p class="contact-form-text">
-                Si vous souhaitez que nous collaborions, je vous invite à
+                Si vous souhaitez que nous <em>collaborions,</em> je vous invite à
                 remplir le formulaire ci-dessous. Je m’engage à vous recontacter
-                dans les plus brefs délais en vue de planifier un appel
-                découverte gratuit, afin de discuter plus en détails de vos
+                dans les plus brefs délais en vue de planifier un <em>appel
+                découverte</em> gratuit, afin de discuter plus en détails de vos
                 objectifs. À l’issue de cet échange, je vous enverrai un devis
-                personnalisé selon vos besoins pour vous accompagner dans le
-                développement de votre entreprise.
+                personnalisé selon vos besoins pour vous <em>accompagner dans le
+                développement de votre entreprise.</em>
               </p>
               <p class="contact-form-text">
                 Pour toute autre question, n’hésitez pas à me contacter via
@@ -144,64 +185,72 @@
             </div>
 
             <div class="contact-details-firstname">
-              <label for="firstname">NOM <span class="asterisque">*</span></label
+              <label for="firstname" class="label-contact"
+                >NOM <span class="asterisque">*</span></label
               ><input type="text" id="firstname" />
             </div>
             <div class="contact-details-lastname">
-              <label for="lastname">PRÉNOM <span class="asterisque">*</span></label
+              <label for="lastname" class="label-contact"
+                >PRÉNOM <span class="asterisque">*</span></label
               ><input type="text" id="lastname" />
             </div>
-            <div class="contact-details-email">
-              <label for="email">E-MAIL <span class="asterisque">*</span></label
+            <div class="contact-details-email" >
+              <label for="email" class="label-contact">E-MAIL <span class="asterisque">*</span></label
               ><input type="email" id="email" />
             </div>
             <div class="contact-details-phone">
-              <label for="tel">TÉLÉPHONE <span class="asterisque">*</span></label><input type="tel" id="tel" />
+              <label for="tel" class="label-contact"
+                >TÉLÉPHONE <span class="asterisque">*</span></label
+              ><input type="tel" id="tel" />
             </div>
             <div class="contact-details-company">
-              <label for="company">NOM DE L'ENTREPRISE <span class="asterisque">*</span></label
+              <label for="company" class="label-contact"
+                >NOM DE L'ENTREPRISE <span class="asterisque">*</span></label
               ><input type="text" id="company" />
             </div>
             <div class="contact-details-activity">
-              <label for="activity">VOTRE ACTIVITÉ <span class="asterisque">*</span></label
+              <label for="activity" class="label-contact"
+                >VOTRE ACTIVITÉ <span class="asterisque">*</span></label
               ><input type="text" id="activity" />
             </div>
           </section>
           <section class="request-details-container">
             <div class="request-details">
-              <label for="radio"
+              <label for="radio" class="label-contact"
                 >PAR QUEL(S) SERVICE(S) DE NASTIA STUDIO ÊTES-VOUS INTÉRESSÉ(E)?
                 <span class="asterisque">*</span></label
               >
 
               <div class="radio-button-container">
-                <label for=""
+                <label for="Visual-Identity" class="radio-label"
                   ><input
+                  id="Visual-Identity"
                     type="radio"
-                    name="radio"
+                    name="radio-contact"
                     class="radio"
                     checked
                   />Identité Visuelle</label
                 >
-                <label for=""
+                <label for="Web-Design" class="radio-label"
                   ><input
+                    id="Web-Design"
                     type="radio"
-                    name="radio"
+                    name="radio-contact"
                     class="radio"
                   />WebDesign</label
                 >
-                <label for=""
-                  ><input type="radio" name="radio" class="radio" />Community
+                <label for="Community-Manager" class="radio-label"
+                  ><input type="radio" id="Community-Manager" name="radio-contact" class="radio" />Community
                   Manager</label
                 >
-                <label for=""
-                  ><input type="radio" name="radio" class="radio" />Autre
+                <label for="Others" class="radio-label"
+                  ><input type="radio" id="Others" name="radio-contact" class="radio" />Autre
                   Demande</label
                 >
               </div>
             </div>
             <div class="request-details">
-              <label for="precise-request">
+              <label for="precise-request" class="label-contact"> 
                 SI AUTRE, PRÉCISEZ LA DEMANDE SOUHAITÉE
               </label>
               <textarea
@@ -214,14 +263,16 @@
               ></textarea>
             </div>
             <div class="request-details">
-              <label for="date"
-                >QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ? <span class="asterisque">*</span></label
+              <label for="date" class="label-contact"
+                >QUELLE EST VOTRE DATE DE FIN DE PROJET IDÉALE ?
+                <span class="asterisque">*</span></label
               >
               <input type="date" id="date" class="date" />
             </div>
             <div class="request-details">
-              <label for="prices"
-                >QUEL EST VOTRE BUDGET POUR CE PROJET ? <span class="asterisque">*</span></label
+              <label for="prices" class="label-contact"
+                >QUEL EST VOTRE BUDGET POUR CE PROJET ?
+                <span class="asterisque">*</span></label
               >
               <select name="prices" id="prices" class="prices">
                 <option value="1000-2000" selected>1000€ - 2000€</option>
@@ -231,13 +282,16 @@
               </select>
             </div>
             <div class="request-details">
-              <label for=""
+              <label for="" class="label-contact"
                 >AUTRE CHOSE QUE VOUS VOUDRIEZ NOUS FAIRE SAVOIR ?</label
               >
               <textarea name="" id="" class="textarea"></textarea>
             </div>
             <div class="request-details">
-              <label for="">COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ? <span class="asterisque">*</span></label>
+              <label for="" class="label-contact"
+                >COMMENT AVEZ-VOUS CONNU NASTIA STUDIO ?
+                <span class="asterisque">*</span></label
+              >
               <select name="" id="" class="known">
                 <option value="" selected>Instagram</option>
                 <option value="">TikTok</option>
@@ -256,7 +310,7 @@
         <div class="square"></div>
       </div>
 
-      <p class="h2-home">RETROUVEZ MOI ÉGALEMENT ICI !</p>
+      <p class="h2-contact">RETROUVEZ MOI ÉGALEMENT ICI !</p>
       <script src="js/script.js"></script>
     </main>
     <!-- pied de page :::::::::::::::::::::::::::::::::::::::::  -->
@@ -294,11 +348,13 @@
       </div>
 
       <div class="footer-copyright">
-        <img src="SVG/copyright.svg" width="auto" height="25px" alt="" />
-        <p class="footer-link">2024 - NastiaStudio |</p>
-        <p class="footer-link">Graphiste Freelance à Lille |</p>
-        <p class="footer-link">Mentions Légales |</p>
-        <p class="footer-link">Conditions Générales de Ventes</p>
+        <p class="footer-copyright-text">
+          <span class="footer-copyright-logo">©</span> 2024 - NastiaStudio
+          <span class="footer-link-space">|</span> Graphiste Freelance à Lille
+          <span class="footer-link-space">|</span> Mentions Légales
+          <span class="footer-link-space">|</span> Conditions Générales de
+          Ventes
+        </p>
       </div>
     </footer>
   </body>

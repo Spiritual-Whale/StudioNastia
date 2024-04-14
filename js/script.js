@@ -90,12 +90,12 @@ document.addEventListener('click', function(event) {
     }
 });
 
-let prevScrollPos = window.scrollY || window.pageYOffset;
 const navbar = document.getElementById("nav-bar");
+let prevScrollPos = window.scrollY;
 
 window.onscroll = function() {
-  let currentScrollPos = window.scrollY || window.pageYOffset;
-  
+  let currentScrollPos = window.scrollY;
+
   if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
   } else {

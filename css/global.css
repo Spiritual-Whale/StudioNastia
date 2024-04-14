@@ -122,6 +122,7 @@ br {
   transition: transform 0.3s ease, opacity 0.3s ease;
   display: none;
   overflow: hidden;
+ 
 }
 
 .menu-scroll-text {
@@ -178,6 +179,10 @@ a {
   .nav-button-container a, .nav-link-container a {
     font-size: 16px;
   }
+
+  #menu-scroll-container {
+    top: 67px;
+  }
 }
 
 @media (hover: none) {
@@ -213,7 +218,7 @@ a {
 }
 
 #mobile-scroll-container {
-  max-height: 700px;
+  
   height: auto;
   width: 75%;
   background-color: #ffffff;
@@ -230,8 +235,9 @@ a {
   transition: transform 0.3s ease, opacity 0.3s ease;
   display: none;
   padding: 3em 2em;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
+
 
 .dropdown-menu-line {
   border: 1px solid #c3c5c97d;
@@ -276,7 +282,7 @@ input {
 }
 .header-img {
   width: 100%;
-  min-height: 70vh;
+  height: 75vh;
   object-fit: cover;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -380,6 +386,9 @@ input {
 
 @media screen and (max-width: 1023px) {
   
+  .sub-logo {
+    width: 140px;
+  }
 
   .header-img {
     
@@ -402,10 +411,6 @@ input {
     cursor: pointer;
     margin-left: auto;
   }
-
-  /* #mobile-scroll-container {
-    top: 100px;
-  } */
 
   .logo {
     width: 140px;
@@ -437,6 +442,10 @@ input {
 /* Responsive Mobile */
 
 @media screen and (max-width: 600px) {
+
+  .sub-logo {
+    width: 95px;
+  }
 
   input {
     font-size: 13px;
@@ -490,12 +499,33 @@ input {
   }
 }
 
-@media only screen and (max-width: 900px) and (max-height: 900px) {
+@media only screen and (max-height: 1024px) and (orientation: landscape) {
+.sub-logo {
+  width: 140px;
+}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
   .nav-bar {
     height: 67px;
   }
 
   .logo {
     width: 95px;
+  }
+  .sub-logo {
+    width: 95px;
+  }
+
+
+    .header-img {
+      height: 90vh;
+    }
+
+  .mobile-dropdown-menu {
+    font-size: 14px;
+  }
+  #mobile-scroll-container {
+    gap: 0.5em;
   }
 }
