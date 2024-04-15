@@ -92,15 +92,21 @@ document.addEventListener('click', function(event) {
 
 const navbar = document.getElementById("nav-bar");
 let prevScrollPos = window.scrollY;
+const triggerPosition = 0.7 * window.innerHeight; // Position de défilement à 70vh
 
 window.onscroll = function() {
   let currentScrollPos = window.scrollY;
 
-  if (prevScrollPos > currentScrollPos) {
-    navbar.style.top = "0";
-  } else {
-    navbar.style.top = `-${navbar.offsetHeight}px`;
+  // Vérifie si la position de défilement a dépassé 70vh
+  if (currentScrollPos > triggerPosition) {
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.top = "0";
+    } else {
+      navbar.style.top = `-${navbar.offsetHeight}px`;
+    }
   }
 
   prevScrollPos = currentScrollPos;
 }
+
+
