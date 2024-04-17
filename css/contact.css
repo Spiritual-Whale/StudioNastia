@@ -131,6 +131,7 @@
   padding: 1em;
   font-size: 16px;
   margin-top: 1.2em;
+  border: 1px solid black;
 }
 
 .date,
@@ -143,12 +144,14 @@
   padding: 1em;
   font-size: 16px;
   margin-top: 1em;
+  color: black;
+  font-family: "mastro-display, sans-serif";
 }
 
 .submit-button {
   
   height: 45px;
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   border-radius: 23px;
   background-color: inherit;

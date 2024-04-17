@@ -1,54 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nastia Studio | À propos</title>
     <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/about.css" type="text/css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tom5dmm.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/czu7yjm.css" />
 </head>
 <body>
         <!-- barre de navigation -->
 
-        <nav class="nav-bar">
+        <nav class="nav-bar" id="nav-bar">
           <ul class="nav">
-              <div class="nav-link-container">
-                  <div class="menu-scroll">
-                  <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
-                  <object data="img/triangle.svg" type="image/svg+xml" class="triangle"></object>
-              </div>
+            <div class="nav-link-container">
               <div class="menu-scroll">
-                  <li><a href="#" class="menu-list">PRESTATIONS</a></li>
-                  <object data="img/triangle.svg" type="image/svg+xml" class="triangle"></object>
+                <li><a href="#" class="menu-list">RÉALISATIONS</a></li>
               </div>
-                  <li><a href="about.html" class="menu-list">A PROPOS</a></li>
+              <div class="menu-scroll" id="menu-scroll-middle">
+                <li><a href="#" class="menu-list">PRESTATIONS</a></li>
+                <object
+                  data="img/triangle.svg"
+                  type="image/svg+xml"
+                  class="triangle"
+                ></object>
+                <div id="menu-scroll-container">
+                  <li>
+                    <a href="#"
+                      ><p class="menu-scroll-text">IDENTITÉ VISUELLE</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><p class="menu-scroll-text">WEBDESIGN</p></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><p class="menu-scroll-text">COMMUNITY MANAGER</p></a
+                    >
+                  </li>
+                </div>
               </div>
-              
-              <a href="index.html" class="logo-link"><img src="img/Logo principal.svg" class="logo" alt="NastiaStudio"></a>
-              
-              
-                  <div class="nav-button-container">
-                  <li><a href="#" class="nav-button">BOUTIQUE</a></li>
-                  <li><a href="contact.html" class="nav-button">CONTACT</a></li>
-                  </div>
-                  
-                  
-                          
-                              </ul>
-                          </nav>
-    <main>
+    
+              <li><a href="about.html" class="menu-list">A PROPOS</a></li>
+            </div>
+    
+            <a href="index.html" class="logo-link"
+              ><img src="img/Logo principal.svg" class="logo" alt="NastiaStudio"
+            /></a>
+    
+            <div class="nav-button-container">
+              <li><a href="#" class="nav-button">BOUTIQUE</a></li>
+              <li><a href="contact.html" class="nav-button">CONTACT</a></li>
+            </div>
+            <svg
+              id="nav-mobile-menu"
+              width="24px"
+              height="18px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#060708"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 6H20M4 12H20M4 18H20"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </ul>
+    
+          <div id="mobile-scroll-container" class="mobile-dropdown-menu">
+            <a href="#" class="menu-scroll-text">RÉALISATION</a>
+            <div class="dropdown-menu-line"></div>
+    
+            <a href="#" class="menu-scroll-text">PRESTATIONS</a>
+            <div class="dropdown-menu-line"></div>
+    
+            <a href="#" class="dropdown-menu-services">IDENTITÉ VISUELLE</a>
+            <div class="dropdown-menu-line-services"></div>
+    
+            <a href="#" class="dropdown-menu-services">WEBDESIGN</a>
+            <div class="dropdown-menu-line-services"></div>
+    
+            <a href="#" class="dropdown-menu-services">COMMUNITY MANAGER</a>
+            <div class="dropdown-menu-line"></div>
+    
+            <a href="about.html" class="menu-scroll-text">À PROPOS</a>
+            <div class="dropdown-menu-line"></div>
+    
+            <a href="#" class="menu-scroll-text">BOUTIQUE</a>
+            <div class="dropdown-menu-line"></div>
+    
+            <a href="contact.html" class="menu-scroll-text">CONTACT</a>
+          </div>
+        </nav>
+    <main class="about-main">
 
-      <h1 class="h1-about">Créer ensemble, <br>inspirer l’excellence</h1>
+      <h1 class="h1-about">Créer <em>ensemble,</em> <br>inspirer l’excellence</h1>
 
-      <p class="intro-text-about">J’accompagne les entrepreneurs à devenir mémorable aux yeux de leurs clients, 
-        en leurs permettant d’adopter une identité visuelle unique, percutante et cohérente. 
+      <p class="intro-text-about">J’accompagne les <em>entrepreneurs à devenir mémorable</em> aux yeux de leurs clients, 
+        en leurs permettant d’adopter une <em>identité visuelle unique, percutante et cohérente.</em> 
         </p>
-      <p class="intro-text-about">L’objectif est de projeter la bonne image auprès de votre cible grâce à une communication adaptée à vos valeurs. 
-        Cela vous aidera à vous démarquer de vos concurrents, 
-        à accroître votre notoriété, à gagner en crédibilité et à optimiser de manière significative vos ventes.</p>
+      <p class="intro-text-about">L’objectif est de <em>vous aider à projeter la bonne image</em> auprès de votre cible grâce à une communication adaptée à vos valeurs. 
+        Cela contribura à <em>vous démarquer de vos concurrents, 
+        à accroître votre notoriété, à gagner en crédibilité et à optimiser de manière significative vos ventes.</em></p>
         <div class="about-container">
-        <img src="img/test-about.jpg" alt="" class="about-img">
+        <img src="img/about-image-min.jpg" alt="" class="about-img">
         <div class="description-text-about-container">
           <p class="description-text-about">Hello, moi c’est Anastasia, et je suis la fondatrice de Nastia Studio, originaire des Hauts-de-France.</p>
           <p class="description-text-about">Passionnée par le monde de la communication et des réseaux sociaux, j’ai très rapidement orienté mes études vers le commerce, la création et le digital.</p>
@@ -87,16 +156,22 @@
       </div>
 
       <div class="contact">
-        <h2 class="h2-bio">Prêt(e) à faire passer votre projet,<span class="italic"> au niveau supérieur ?</span><br>
-        Travaillons ensemble pour transformer vos idées en réalité.</h2>
-            <p class="contact-text">Avez vous un projet sur lequel vous aimeriez collaborer ?<br> Alors
-                discutons de vos <span class="italic">besoins, attentes</span> et <span class="italic">souhaits.</span> Pour cela je vous
-                invite à <span class="italic">réserver un créneau horaire</span>, afin que l'on 
-                <span class="italic">apprenne à mieux se connaître</span>
-                et que je puisse <span class="italic">répondre à toutes vos questions.</span>
-            </p>
-            <a href="#"><button class="nav-button">ME CONTACTER</button></a>
-    </div>
+        <h2 class="h2-home">
+          Prêt(e) à faire passer votre projet,<em class="italic-title">
+            au niveau supérieur ? <br
+          /></em>
+          Travaillons ensemble pour transformer vos idées en réalité.
+        </h2>
+        <p class="home-main-text">
+          Avez vous un projet sur lequel vous aimeriez collaborer ? <br />
+          Alors discutons de vos <em>besoins, attentes</em> et
+          <em>souhaits.</em> Pour cela je vous invite à
+          <em>réserver un créneau horaire</em>, afin que l'on
+          <em>apprenne à mieux se connaître</em>
+          et que je puisse <em>répondre à toutes vos questions.</em>
+        </p>
+        <a href="#"><button class="nav-button">ME CONTACTER</button></a>
+      </div>
 
       <div class="social-iframe">
         <div class="square"></div>
@@ -108,48 +183,51 @@
 
     <p class="h2-global">RETROUVEZ MOI ÉGALEMENT ICI !</p>
     </main>
+    <script src="js/script.js"></script>
     <!-- pied de page :::::::::::::::::::::::::::::::::::::::::  -->
     <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-content">
-            <p class="footer-title">CONTACT</p>
-            <img src="SVG/Logo principal.svg" alt="" class="footer-logo" />
-            <p class="footer-link">NastiaStudio@gmail.com</p>
-            <div class="footer-social-icons-container">
-              <img src="img/insta.svg" alt="" class="footer-social-icons" />
-              <img src="img/tiktok.svg" alt="" class="footer-social-icons" />
-              <img src="img/pinterest.svg" alt="" class="footer-social-icons" />
-            </div>
-          </div>
-          <div class="footer-content">
-            <p class="footer-title">EXPLORER</p>
-            <p class="footer-link">Réalisations</p>
-            <p class="footer-link">A propos</p>
-            <p class="footer-link">Contact</p>
-            <p class="footer-link">newsletter</p>
-          </div>
-          <div class="footer-content">
-            <p class="footer-title">SERVICES</p>
-            <p class="footer-link">Prestations</p>
-            <p class="footer-link">Identité visuelle</p>
-            <p class="footer-link">Webdesign</p>
-            <p class="footer-link">Community manager</p>
-          </div>
-          <div class="footer-content">
-            <p class="footer-title">BOUTIQUE</p>
-            <p class="footer-link">Ressources offertes</p>
-            <p class="footer-link">Templates</p>
+      <div class="footer-container">
+        <div class="footer-content">
+          <p class="footer-title">CONTACT</p>
+          <img src="img/Logo principal.svg" alt="" class="footer-logo" />
+          <p class="footer-link">NastiaStudio@gmail.com</p>
+          <div class="footer-social-icons-container">
+            <img src="img/insta.svg" alt="" class="footer-social-icons" />
+            <img src="img/tiktok.svg" alt="" class="footer-social-icons" />
+            <img src="img/pinterest.svg" alt="" class="footer-social-icons" />
           </div>
         </div>
-  
-        <div class="footer-copyright">
-          <img src="img/copyright.svg" width="auto" height="25px" alt="" />
-          <p class="footer-link">2024 - NastiaStudio |</p>
-          <p class="footer-link">Graphiste Freelance à Lille |</p>
-          <p class="footer-link">Mentions Légales |</p>
-          <p class="footer-link">Conditions Générales de Ventes</p>
+        <div class="footer-content">
+          <p class="footer-title">EXPLORER</p>
+          <p class="footer-link">Réalisations</p>
+          <p class="footer-link">A propos</p>
+          <p class="footer-link">Contact</p>
+          <p class="footer-link">Newsletter</p>
         </div>
-      </footer>
+        <div class="footer-content">
+          <p class="footer-title">SERVICES</p>
+          <p class="footer-link">Prestations</p>
+          <p class="footer-link">Identité visuelle</p>
+          <p class="footer-link">Webdesign</p>
+          <p class="footer-link">Community manager</p>
+        </div>
+        <div class="footer-content">
+          <p class="footer-title">BOUTIQUE</p>
+          <p class="footer-link">Ressources offertes</p>
+          <p class="footer-link">Templates</p>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p class="footer-copyright-text">
+          <span class="footer-copyright-logo">©</span> 2024 - NastiaStudio
+          <span class="footer-link-space">|</span> Graphiste Freelance à Lille
+          <span class="footer-link-space">|</span> Mentions Légales
+          <span class="footer-link-space">|</span> Conditions Générales de
+          Ventes
+        </p>
+      </div>
+    </footer>
 </body>
 
 </html>

@@ -11,6 +11,7 @@ body {
   font-weight: 500;
   color: #060708;
   overflow-x: hidden;
+  
 }
 
 em,
@@ -76,32 +77,34 @@ br {
 .nav-button-container {
   justify-content: flex-end;
   gap: 10%;
+  height: 100%;
 }
 
 .nav-link-container {
   justify-content: flex-start;
-  gap: 10%;
+  gap: 8%;
+  height: 100%;
 }
 .menu-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px 0;
   gap: 3px;
 }
 
-.triangle {
+.svg-triangle {
   width: 15px;
   height: auto;
 }
 
-.menu-scroll:hover .triangle {
+.menu-scroll:hover .svg-triangle {
   transform: rotate(90deg);
   transition: transform 0.2s ease;
 }
 
 #menu-scroll-middle {
   position: relative;
+  height: 100%;
 }
 
 #menu-scroll-container {
@@ -110,7 +113,7 @@ br {
   width: 200%;
   background-color: #ffffff;
   position: absolute;
-  top: 69px;
+  top: 72px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -144,8 +147,8 @@ a {
   width: 12%;
 }
 
-.nav-button {
-  padding: 0.5em 1.5em;
+.nav-button, button {
+  padding: 0.5em 1.7em;
   border: 2px solid black;
   border-radius: 23px;
   background-color: inherit;
@@ -170,19 +173,16 @@ a {
   fill: black;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
   
   .nav-button-container, .nav-link-container {
-    gap: 3%;
+    gap: 6%;
   }
 
   .nav-button-container a, .nav-link-container a {
     font-size: 16px;
   }
 
-  #menu-scroll-container {
-    top: 67px;
-  }
 }
 
 @media (hover: none) {
@@ -271,7 +271,9 @@ input {
   height: 60px;
   border: 1px solid black;
   width: 100%;
-  font-size: 1.2em;
+  color: black ;
+  border-radius: 0;
+  font-size: 1em;
 }
 
 /* Header */

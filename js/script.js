@@ -24,89 +24,85 @@ menuHover.addEventListener('mouseleave', function() {
 
 
 // Sélection des éléments DOM
-const menuMobileClick = document.getElementById('nav-mobile-menu');
-const hiddenMobileBlock = document.getElementById('mobile-scroll-container');
+const menuMobileClick = document.getElementById('nav-mobile-menu'); // Bouton du menu mobile
+const hiddenMobileBlock = document.getElementById('mobile-scroll-container'); // Conteneur du menu déroulant
+const navbar = document.getElementById("nav-bar"); // Barre de navigation
+let isMenuOpen = false; // Indicateur pour suivre l'état du menu mobile (ouvert ou fermé)
+let prevScrollPos = window.scrollY; // Stocke la position de défilement précédente
+// const triggerPosition = 0. * window.innerHeight; // Position de défilement à 70vh
 
 // Fonction pour basculer l'affichage du menu mobile
 function toggleMobileMenu() {
-    // Obtenir le style d'affichage actuel du menu mobile
-    const displayStyle = window.getComputedStyle(hiddenMobileBlock).display;
-    // Si le menu est déjà ouvert ou si le défilement vertical dépasse 200 pixels, le fermer
-    if (displayStyle === 'flex') {
-        hideMobileMenu(); // Appeler la fonction pour cacher le menu
-    } else {
-        showMobileMenu(); // Sinon, appeler la fonction pour afficher le menu
+    if (isMenuOpen) { // Si le menu est ouvert
+        hideMobileMenu(); // Cacher le menu
+    } else { // Sinon
+        showMobileMenu(); // Afficher le menu
     }
 }
 
 // Fonction pour afficher le menu mobile
 function showMobileMenu() {
-    // Définir les styles pour afficher le menu
-    hiddenMobileBlock.style.display = 'flex';
-    hiddenMobileBlock.style.transform = 'translateY(-24px)';
+    hiddenMobileBlock.style.display = 'flex'; // Afficher le conteneur du menu
+    hiddenMobileBlock.style.transform = 'translateY(-24px)'; // Animation d'apparition du menu
     hiddenMobileBlock.offsetHeight; // Forcer un reflow pour activer l'animation
-    hiddenMobileBlock.style.transform = 'translateY(0px)';
-    hiddenMobileBlock.style.opacity = '1';
+    hiddenMobileBlock.style.transform = 'translateY(0px)'; // Réinitialiser la transformation
+    hiddenMobileBlock.style.opacity = '1'; // Rendre le menu visible
+    isMenuOpen = true; // Mettre à jour l'état du menu (ouvert)
 }
 
 // Fonction pour cacher le menu mobile
 function hideMobileMenu() {
-    // Définir les styles pour cacher le menu avec une transition de sortie
-    hiddenMobileBlock.style.transform = "translateY(-24px)";
-    hiddenMobileBlock.style.opacity = "0";
-    // Utiliser setTimeout pour définir un délai avant de masquer définitivement le menu
+    hiddenMobileBlock.style.transform = "translateY(-24px)"; // Animation de disparition du menu
+    hiddenMobileBlock.style.opacity = "0"; // Rendre le menu transparent
     setTimeout(() => {
-        hiddenMobileBlock.style.display = 'none';
+        hiddenMobileBlock.style.display = 'none'; // Masquer le menu après l'animation
     }, 150);
+    isMenuOpen = false; // Mettre à jour l'état du menu (fermé)
 }
+
+// // Fonction pour gérer le comportement du menu en fonction du défilement
+// function handleScroll() {
+//    let currentScrollPos = window.scrollY; // Obtenir la position de défilement actuelle
+//    let triggerPosition
+
+//     if (currentScrollPos > triggerPosition) { // Si la position de défilement dépasse 70vh
+//        // Afficher ou masquer la barre de navigation en fonction de la direction du défilement
+//        navbar.style.top = prevScrollPos > currentScrollPos ? "0" : `-${navbar.offsetHeight}px`;
+//     }
+
+//     prevScrollPos = currentScrollPos; // Mettre à jour la position de défilement précédente
+//  }
 
 // Écouter les clics sur le bouton du menu mobile et appeler la fonction de basculement du menu
 menuMobileClick.addEventListener('click', toggleMobileMenu);
 
 // Écouter les événements de défilement de la fenêtre
-window.addEventListener('scroll', function () {
-    // Si le menu mobile est ouvert et que le défilement vertical dépasse 600 pixels, le fermer
-    if (window.getComputedStyle(hiddenMobileBlock).display === 'flex' && window.scrollY > 800) {
-        hideMobileMenu();
-    }
-});
+// window.addEventListener('scroll', function() {
+//     if (isMenuOpen && window.scrollY > 600) { // Si le menu est ouvert et que le défilement dépasse 800 pixels
+//         hideMobileMenu(); // Cacher le menu
+//     }
+
+//     handleScroll(); // Gérer le comportement du menu en fonction du défilement
+// });
 
 // Écouter les événements de redimensionnement de la fenêtre
 window.addEventListener('resize', function() {
-    // Si la largeur de la fenêtre dépasse 480 pixels, cacher le menu mobile
-    if (window.innerWidth > 480) {
-        hiddenMobileBlock.style.display = "none";
+    if (window.innerWidth > 480) { // Si la largeur de la fenêtre dépasse 480 pixels
+        hiddenMobileBlock.style.display = "none"; // Masquer le menu
     }
 });
 
-// Écouter les clics sur tout le document
+// Écouter les événements de défilement sur le menu mobile
+hiddenMobileBlock.addEventListener('scroll', function(event) {
+    // Empêcher la propagation des événements de défilement vers le document
+    event.stopPropagation();
+});
+
+// Écouter les événements de clic sur tout le document
 document.addEventListener('click', function(event) {
-    // Vérifier si le clic n'est pas sur le bouton du menu mobile ou sur le menu lui-même
-    if (!menuMobileClick.contains(event.target) && !hiddenMobileBlock.contains(event.target)) {
-        // Si le menu mobile est ouvert, le fermer
-        if (window.getComputedStyle(hiddenMobileBlock).display === 'flex') {
-            hideMobileMenu();
-        }
+    // Si le clic n'est pas sur le bouton du menu mobile ou sur le menu lui-même et que le menu est ouvert
+    if (!menuMobileClick.contains(event.target) && !hiddenMobileBlock.contains(event.target) && isMenuOpen) {
+        hideMobileMenu(); // Cacher le menu
     }
 });
-
-const navbar = document.getElementById("nav-bar");
-let prevScrollPos = window.scrollY;
-const triggerPosition = 0.7 * window.innerHeight; // Position de défilement à 70vh
-
-window.onscroll = function() {
-  let currentScrollPos = window.scrollY;
-
-  // Vérifie si la position de défilement a dépassé 70vh
-  if (currentScrollPos > triggerPosition) {
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.top = "0";
-    } else {
-      navbar.style.top = `-${navbar.offsetHeight}px`;
-    }
-  }
-
-  prevScrollPos = currentScrollPos;
-}
-
 
