@@ -8,7 +8,8 @@
 
 body {
   font-family: "mastro-display", sans-serif;
-  font-weight: 500;
+
+  /* font-weight: 500; */
   color: #060708;
   overflow-x: hidden;
   
@@ -152,11 +153,11 @@ a {
   border: 2px solid black;
   border-radius: 23px;
   background-color: inherit;
-  font-weight: 500;
   cursor: pointer;
   font-size: 20px;
-  font-family: "mastro-display", sans-serif;
   color: black;
+  font-family: "mastro-display", sans-serif;
+  font-weight: 500;
 }
 #nav-mobile-menu {
   display: none;
@@ -318,6 +319,9 @@ input {
   color: #ffffff;
   font-style: oblique 10deg;
   margin-bottom: 0.5em;
+  font-family: "mastro-display", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .footer-link,
@@ -325,12 +329,14 @@ input {
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  font-weight: bold;
-  font-style: oblique 10deg;
+  font-family: "mastro-display", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .footer-copyright-text {
-  font-style: normal;
+  font-family: "mastro-display", sans-serif;
+  font-weight: 600;
   line-height: 2em;
 }
 .footer-link-space {
