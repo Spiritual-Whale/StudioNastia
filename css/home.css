@@ -31,12 +31,14 @@
 }
 
 .home-main-text {
-  max-width: 45%;
+  max-width: 50%;
   line-height: 1.6em;
   text-align: center;
   margin: 0 auto 3em auto;
   font-size: 20px;
 }
+
+
 
 .h1-home {
   font-size: 70px;
@@ -57,12 +59,12 @@
   line-height: 1.5em;
   text-align: center;
   max-width: 100%;
-  /* font-weight: bold; */
-  /* font-style: oblique 10deg; */ 
   font-family: "mastro-display", sans-serif;
   font-style: italic;
   font-weight: 600;
 }
+
+
 
 .home-intro-text > .h2-home {
   text-align: center;
@@ -70,7 +72,8 @@
 }
 
 .home-intro-text > .home-main-text {
-  max-width: 60%;
+  max-width: 55%;
+  line-height: 2em;
 }
 
 .h3-home {
@@ -88,7 +91,11 @@
   font-weight: 500;
 }
 
-.hide {
+.br-desktop {
+  display: inline-block;
+}
+
+.br-mobile {
   display: none;
 }
 /* Mise en Page  */
@@ -290,9 +297,8 @@ Dernière Réalisation */
 }
 
 .tools-container > .nav-button {
-  padding: 0.5em 1.7em;
+  
   margin: 8% auto 0 auto;
-  text-align: center;
   order: 6;
   text-wrap: nowrap;
 }
@@ -365,10 +371,7 @@ Dernière Réalisation */
     font-size: 30px;
   }
 
-  .bio > .h2-home,
-  .contact > .h2-home {
-    font-size: 25px;
-  }
+  
 
   .h3-home {
     font-size: 19px;
@@ -383,6 +386,7 @@ Dernière Réalisation */
   }
   .block-text {
     max-width: 100%;
+    margin: 1em 0;
   }
   .home-intro-text > .home-main-text {
     max-width: 82%;
@@ -474,15 +478,26 @@ Dernière Réalisation */
 /* Responsive Mobile */
 
 @media screen and (max-width: 600px) {
+
+
+  .br-desktop {
+    display: none;
+  }
+
+  .br-mobile {
+    display: inline-block;
+  }
   .home-core {
     padding: 0 30px;
   }
   .h1-home {
     font-size: 21px;
   }
-  .services,
-  .job {
+  .services {
     font-size: 13px;
+  }
+  .job {
+    font-size: 15px;
   }
   .h2-home {
     font-size: 19px;
@@ -503,6 +518,8 @@ Dernière Réalisation */
     font-size: 12px;
     max-width: 100%;
     text-align: start;
+    word-spacing: -0.5px;
+    margin: 1.5em 0;
   }
 
   .hide-intro {
@@ -513,6 +530,7 @@ Dernière Réalisation */
     max-width: 100%;
     text-align: center;
     margin-bottom: 4em;
+    line-height: 1.5em;
   }
 
   .nav-button,
@@ -588,11 +606,14 @@ Dernière Réalisation */
     margin-bottom: 3em;
   }
 
-  .bio,
-  .contact {
+  .bio {
     padding: 10% 30px;
     margin-top: 2.5em;
     margin-bottom: 4em;
+  }
+
+  .contact > .nav-button {
+    margin: 0;
   }
 
   .home-input-container {

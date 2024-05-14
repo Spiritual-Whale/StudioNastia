@@ -1,112 +1,279 @@
+body {
+  font-family: "mastro-display", sans-serif;
+}
 
-.h1-about, .h2-about {
-    font-size: 42px;
+.h1-about,
+.h2-about,
+.h2-about-end {
+  font-size: 42px;
   margin: 15% auto 2em auto;
   text-align: center;
   max-width: 100%;
   font-weight: 600;
+  font-style: italic;
 }
 
 .h2-about {
-    margin-top: 8%;
+  margin-top: 8%;
+}
+
+.contact > .h2-about {
+    margin-bottom: 92px;
+    margin-top: 178px;
 }
 
 .intro-text-about {
-    text-align: center;
-    max-width: 60%;
-    margin: 0 auto 1.5em auto;
-    line-height: 1.5em;
-    font-size: 20px;
+  text-align: center;
+  max-width: 44%;
+  margin: 0 auto 1.5em auto;
+  line-height: 1.5em;
+  font-size: 20px;
 }
 
 .about-container {
-    position: relative;
-    padding: 0 7.5vw;
-    max-width: 100%;
-    height: auto;
-    margin-top: 10%;
+  position: relative;
+  padding: 0 7.5vw;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10%;
 }
 
 .about-img {
-	
-	width: 69%;
-	height: auto;
-	
+  width: 69%;
+  height: auto;
 }
 
 .description-text-about-container {
-    width: 39%;
-    height: 85%;
-    top: 7%;
-    left: 53%;
-    background-color: #F9F3EE;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 4%;
-    overflow: hidden;
-    box-shadow: 0px 3px 6px #00000029;
-
+  width: 39%;
+  height: 85%;
+  top: 7%;
+  left: 53%;
+  background-color: #f9f3ee;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4%;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 .description-text-about {
-    text-align: left;
-    font-size: 20px;
-    max-width: 100%;
+  text-align: left;
+  font-size: 20px;
+  max-width: 100%;
+  line-height: 1.5em;
 }
 .about-values-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 .about-value-square {
-    background-color: #E5EDE4;
-    border-radius: 60px;
-    height: auto;
-    width: 330px;
-    aspect-ratio: 1/1.15;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-    padding: 3em 1.5em;
-    overflow: hidden;
-    text-align: center;
-    line-height: 1.5em;
+  background-color: #e5ede4;
+  border-radius: 60px;
+  height: auto;
+  width: 330px;
+  aspect-ratio: 1/1.15;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 57px 40px 53px 40px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.5em;
+}
 
+.about-value-title {
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.about-value-text {
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: 500;
 }
 
 .h2-home {
-	font-size: 42px;
-	margin: 0 auto 2em auto;
-	line-height: 1.5em;
-	text-align: center;
-	max-width: 100%;
-	font-weight: bold;
-	font-style: oblique 10deg;
+  font-size: 42px;
+  margin: 0 auto 2em auto;
+  line-height: 1.5em;
+  text-align: center;
+  max-width: 100%;
+  font-weight: 600;
+  font-style: italic;
 }
 
-.home-main-text {
-	max-width: 45%;
-	line-height: 1.6em;
-	text-align: center;
-	margin: 0 auto 3em auto;
-	font-size: 20px;
+.about-main-text {
+  max-width: 45%;
+  line-height: 1.6em;
+  text-align: center;
+  margin: 0 auto 3em auto;
+  font-size: 20px;
 }
 
 .nav-button {
-	padding: 0.5em 1.5em;
-	border: 2px solid black;
-	border-radius: 23px;
-	background-color: inherit;
-	font-weight: 500;
-	cursor: pointer;
-	font-size: 20px;
-	font-family: "mastro-display", sans-serif;
-	color: black;
+  padding: 0.5em 1.5em;
+  border: 2px solid black;
+  border-radius: 23px;
+  background-color: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "mastro-display", sans-serif;
+  color: black;
+}
+
+@media (hover: none) {
+
+    .about-values-container {
+
+        max-width: 100%;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        padding: 0 51px;
+    }
+
+    .about-value-square {
+        height: 298px;
+        min-width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+  .description-text-about {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+
+.about-container {
+  padding: 0;
+}
+
+.h1-about {
+  margin-top: 30%;
+  font-size: 30px;
+  line-height: 1.6em;
+}
+
+.h2-about {
+    margin: 110px auto 80px auto;
+    font-size: 25px;
+}
+
+.h2-about-end {
+  font-size: 30px;
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+.intro-text-about {
+    max-width: 70%;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+  }
+
+.description-text-about-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 80px 130px;
+    justify-content: center;
+    gap: 41px;
+  }
+
+  .about-value-square {
+    height: 298px;
+    width: 260px;
+  }
+
+  .about-value-title {
+    font-size: 19px;
+  }
+
+  .about-value-text, .about-main-text, .description-text-about {
+    font-size: 13px;
+  }
+
+  .description-text-about {
+    line-height: 2em;
+  }
+
+  .about-main-text {
+    max-width: 70%;
+  }
+
+  .about-img {
+    width: 88%;
+  }
+
+  .nav-button {
+    font-size: 13px;
+    border: 1px solid black;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .h1-about {
+    font-size: 25px;
+  }
+
+  .h2-about {
+    font-size: 17px;
+    margin: 60px auto 40px auto;
+  }
+
+  .about-value-title {
+    font-size: 16px;
+  }
+
+  .about-value-text, .about-main-text, .intro-text-about, .description-text-about {
+    font-size: 12px;
+  }
+
+  .intro-text-about {
+    max-width: 88%;
+  }
+  .description-text-about-container {
+    padding: 40px 36px;
+    gap: 20px;
+  }
+
+  .nav-button {
+    font-size: 12px;
+  }
+
+  .about-values-container {
+    padding: 0 36px;
+    margin-bottom: 60px;
+  }
+  .about-value-square {
+    height: 254px;
+    min-width: 222px;
+    padding: 52px 24px;
+    gap: 19px;
+  }
+
+  .h2-about-end {
+    font-size: 22px;
+  }
+
 }
