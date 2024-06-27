@@ -1,0 +1,377 @@
+.nav-button {
+  margin: 0 auto;
+}
+
+.h1-realisations,
+.h2-realisations {
+  font-family: "mastro-display", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+  font-style: italic;
+}
+
+.h1-realisations {
+  margin: 250px auto 80px auto;
+}
+
+.h2-realisations {
+  margin: 277px auto 90px auto;
+}
+
+.p-realisations,
+.project-type,
+.realisations-display-text {
+  font-family: "mastro-display", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 45%;
+  text-align: center;
+  margin: 0 auto 150px auto;
+  line-height: 2em;
+}
+
+.project-type-container {
+  display: flex;
+  justify-content: right;
+  gap: 32px;
+  margin-bottom: 90px;
+}
+
+.project-type {
+  text-decoration: underline;
+  max-width: 100%;
+  margin: 0;
+}
+
+.project-type::hover {
+  cursor: pointer;
+}
+
+.project-core {
+  padding: 0 135px;
+}
+
+.realisations-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+#show-more-projects {
+    display: none;
+}
+
+.realisations-display {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 0 0 calc((100% - 2 * 40px) / 3);
+  min-width: 300px;
+  margin-bottom: 150px;
+}
+
+.realisations-display-image {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1.16;
+  height: auto;
+  max-height: 608px;
+}
+
+.realisations-display-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.text-content {
+  margin: 60px 0 0 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.realisations-display-title {
+  font-family: "mastro-display", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 26px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.realisations-display-text {
+  max-width: 523px;
+  margin: 0;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+
+.h2-realisations {
+  margin: 177px auto 90px auto;
+}
+
+.bio,
+.contact {
+  margin: 0;
+}
+
+.services-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 9%;
+  margin-bottom: 170px;
+  max-width: 100%;
+}
+
+.services-display {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1.14;
+}
+
+.text-content-services {
+  margin: 60px auto 40px auto;
+  text-align: center;
+}
+
+.services-title {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-family: "mastro-display", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.services-text {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-family: "mastro-display", sans-serif;
+}
+
+.last-title {
+  font-size: 30px;
+  font-family: "mastro-display", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  margin: 96px auto 90px auto;
+}
+
+@media screen and (max-width: 1200px) {
+  /* police Tablette */
+
+  .h1-realisations,
+  .h2-realisations,
+  .last-title {
+    font-size: 34px;
+  }
+
+  .realisations-display-title,
+  .services-title {
+    font-size: 19px;
+  }
+
+  .p-realisations,
+  .project-type,
+  .realisations-display-text,
+  .services-text,
+  .nav-button, #show-more-projects {
+    font-size: 16px;
+  }
+
+  .nav-button,  #show-more-projects {
+    width: 180px ;
+    height: 40px;
+    border: 1px solid black;
+  }
+
+  .project-core {
+    padding: 0;
+  }
+
+
+  .h1-realisations {
+    margin: 200px auto 60px auto;
+
+    max-width: 535px;
+  }
+
+  .nav-button,  #show-more-projects {
+    width: 160px ;
+    height: 36px;
+  }
+
+  .p-realisations {
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+
+  .project-type-container {
+	margin-bottom: 60px;
+	margin-right: 50px;
+}
+
+  .realisations-container {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 471px;
+    height: auto;
+  }
+
+  .realisations-display {
+    margin-bottom: 100px;
+  }
+
+  .realisations-display-image:hover {
+    transform: none;
+  }
+
+  .text-content {
+    margin: 40px 0 0 0;
+    height: auto;
+    min-height: 80px;
+    overflow: visible;
+  }
+
+  .realisations-display-title {
+    margin-bottom: 30px;
+    font-size: 21px;
+  }
+
+  .h2-realisations {
+    margin: 100px auto -40px auto;
+  }
+
+
+  .hidden-project {
+    display: none;
+}
+
+#show-more-projects {
+    display: block;
+    margin: -50px auto 100px auto;
+}
+
+  .text-content-services {
+    margin: 40px auto 30px auto;
+  }
+
+  .services-title {
+    margin-bottom: 21px;
+  }
+
+  .services-container {
+    margin: 0 auto 110px auto;
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: auto;
+  }
+
+  .services-img {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* polices smartphone */
+
+  .h1-realisations,
+  .h2-realisations {
+    font-size: 28px;
+  }
+
+  .h1-realisations {
+    margin: 120px auto 40px auto;
+    max-width: 300px;
+  }
+
+  .h2-realisations {
+    margin: 70px auto -30px auto;
+    max-width: 300px;
+  }
+
+  .last-title {
+    font-size: 23px;
+  }
+
+  .realisations-display-title,
+  .services-title {
+    font-size: 17px;
+  }
+
+  .p-realisations,
+  .project-type,
+  .realisations-display-text,
+  .services-text,
+  .nav-button, #show-more-projects {
+    font-size: 14px;
+  }
+
+  .p-realisations {
+    margin-bottom: 70px;
+    max-width: 300px;
+  }
+
+  .project-type-container {
+    margin-right: 35px;
+    margin-bottom: 40px;
+    gap: 15px;
+  }
+
+  .realisations-container {
+    width: 315px;
+  }
+
+  .realisations-display {
+   margin-bottom: 70px;
+  }
+
+  .text-content {
+	margin-top: 30px;
+}
+
+.text-content-services {
+	margin: 30px auto 20px auto;
+}
+
+.realisations-display-title {
+	margin-bottom: 20px;
+    font-size: 18px;
+}
+
+  .services-container {
+    width: 255px;
+  }
+
+  .services-display {
+    margin: 0 36px 40px 0;
+    max-width: 100%;
+  }
+
+  .services-img {
+    margin-top: 70px;
+  }
+
+  #show-more-projects {
+    margin-top: -20px;
+  }
+
+  .nav-button,  #show-more-projects {
+    width: 160px ;
+    height: 36px;
+  }
+}

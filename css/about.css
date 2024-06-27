@@ -6,15 +6,17 @@ body {
 .h2-about,
 .h2-about-end {
   font-size: 42px;
-  margin: 15% auto 2em auto;
+  margin: 250px auto 90px auto;
   text-align: center;
   max-width: 100%;
   font-weight: 600;
   font-style: italic;
+  font-family: "mastro-display", sans-serif;
 }
 
 .h2-about {
-  margin-top: 8%;
+  margin-top: 210px;
+  margin-bottom: 100px;
 }
 
 .contact > .h2-about {
@@ -24,7 +26,7 @@ body {
 
 .intro-text-about {
   text-align: center;
-  max-width: 44%;
+  max-width: 850px;
   margin: 0 auto 1.5em auto;
   line-height: 1.5em;
   font-size: 20px;
@@ -35,7 +37,7 @@ body {
   padding: 0 7.5vw;
   max-width: 100%;
   height: auto;
-  margin-top: 10%;
+  margin-top: 150px;
 }
 
 .about-img {
@@ -48,7 +50,7 @@ body {
   height: 85%;
   top: 7%;
   left: 53%;
-  background-color: #f9f3ee;
+  background-color: #fff0dd;
   position: absolute;
   z-index: 1;
   display: flex;
@@ -70,29 +72,37 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 20px;
 }
+
+.sub-group-square {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .about-value-square {
   background-color: #e5ede4;
   border-radius: 60px;
-  height: auto;
-  width: 330px;
-  aspect-ratio: 1/1.15;
+  height: 352px;
+  width: 333px;
+  padding: 40px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
-  padding: 57px 40px 53px 40px;
+  gap: 40px;
   overflow: hidden;
   text-align: center;
   line-height: 1.5em;
+  overflow: hidden;
 }
 
 .about-value-title {
   font-size: 26px;
   font-weight: 600;
   font-style: italic;
+  margin-bottom: 0;
 }
 
 .about-value-text {
@@ -120,35 +130,6 @@ body {
   font-size: 20px;
 }
 
-.nav-button {
-  padding: 0.5em 1.5em;
-  border: 2px solid black;
-  border-radius: 23px;
-  background-color: inherit;
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 20px;
-  font-family: "mastro-display", sans-serif;
-  color: black;
-}
-
-@media (hover: none) {
-
-    .about-values-container {
-
-        max-width: 100%;
-        overflow-x: scroll;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-y: hidden;
-        padding: 0 51px;
-    }
-
-    .about-value-square {
-        height: 298px;
-        min-width: 260px;
-    }
-}
 
 @media only screen and (max-width: 1500px) {
   .description-text-about {
@@ -163,14 +144,16 @@ body {
 }
 
 .h1-about {
-  margin-top: 30%;
-  font-size: 30px;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  font-size: 34px;
   line-height: 1.6em;
+  max-width: 550px;
 }
 
 .h2-about {
     margin: 110px auto 80px auto;
-    font-size: 25px;
+    font-size: 34px;
 }
 
 .h2-about-end {
@@ -181,38 +164,50 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    margin-top: 100px;
+  }
+
+  .about-img {
+    width: 75%;
   }
 
 .intro-text-about {
-    max-width: 70%;
-    font-size: 13px;
-    letter-spacing: 0.7px;
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 1.8em;
   }
 
 .description-text-about-container {
     position: static;
-    width: 100%;
+    width: 513px;
     height: auto;
-    padding: 80px 130px;
+    padding: 60px;
     justify-content: center;
     gap: 41px;
   }
 
+  .sub-group-square, .about-values-container {
+    gap: 25px;
+  }
+
   .about-value-square {
-    height: 298px;
-    width: 260px;
+    height: 304px;
+    width: 265px;
+    padding: 30px;
+    gap: 30px;
+
   }
 
   .about-value-title {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .about-value-text, .about-main-text, .description-text-about {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .description-text-about {
-    line-height: 2em;
+    line-height: 1.8em;
   }
 
   .about-main-text {
@@ -232,29 +227,42 @@ body {
 
 @media only screen and (max-width: 600px) {
 
+
+  
+
   .h1-about {
-    font-size: 25px;
+    font-size: 28px;
+    margin-top: 120px;
+    margin-bottom: 40px ;
+    max-width: 300px;
   }
 
   .h2-about {
-    font-size: 17px;
+    font-size: 28px;
     margin: 60px auto 40px auto;
   }
 
+  .intro-text-about {
+    margin: 0 35px 10px 35px;
+  }
+
   .about-value-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .about-value-text, .about-main-text, .intro-text-about, .description-text-about {
-    font-size: 12px;
+    font-size: 14px;
   }
 
-  .intro-text-about {
-    max-width: 88%;
-  }
   .description-text-about-container {
-    padding: 40px 36px;
-    gap: 20px;
+    width: 88%;
+    padding: 65px 40px;
+  }
+
+
+  .about-container {
+    margin-top: 65px;
+    gap: 70px;
   }
 
   .nav-button {
@@ -262,18 +270,33 @@ body {
   }
 
   .about-values-container {
+    flex-direction: column;
     padding: 0 36px;
     margin-bottom: 60px;
   }
+
+  .sub-group-square {
+    flex-direction: column;
+  }
   .about-value-square {
-    height: 254px;
-    min-width: 222px;
-    padding: 52px 24px;
-    gap: 19px;
+
+    justify-content: center;
+    height: 270px;
+    width: 236px;
+    padding: 20px;
+    gap: 20px;
   }
 
+  
   .h2-about-end {
     font-size: 22px;
+  }
+
+  .nav-button {
+    border: 0.5px solid black;
+    font-size: 14px;
+    width: 160px;
+    height: 36px;
   }
 
 }

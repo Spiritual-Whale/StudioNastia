@@ -28,16 +28,16 @@
   position: relative;
   height: auto;
   width: 100%;
-  margin-bottom: 4em;
 }
   
 
 .h2-contact {
+  font-family: "mastro-display", sans-serif;
   font-size: 42px;
-  margin: 3em auto;
+  margin: 140px auto 150px auto;
   line-height: 1.5em;
   text-align: center;
-  max-width: 100%;
+  max-width: 740px;
   font-weight: 600;
   font-style: oblique 10deg;
 }
@@ -48,31 +48,47 @@
   padding: 0 5vw;
 }
 
+input {
+  padding: 1em;
+  margin-top: 40px;
+  height: 60px;
+  border: 1px solid black;
+  width: 100%;
+  color: black ;
+  border-radius: 0;
+  font-size: 1em;
+}
+
  .label-contact {
   font-size: 26px;
   font-weight: 600;
   font-style: oblique 10deg;
   text-transform: uppercase;
-  margin-bottom: 1em;
   line-height: 1.5em;
 }
 
 .contact-info-container {
 	display: flex;
 	flex-direction: column;
-	gap: 90px;
+	gap: 150px;
   max-width: 100%;
 }
 
-.contact-info {
-  background-color: #fceccc;
+.contact-info-1, .contact-info-2 {
+  background-color: #fff0dd;
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 102px 45px;
   overflow: hidden;
   max-width: 100%;
-  gap: 2em;
+  padding: 40px 20px 40px 60px;
+  gap: 60px;
+}
+
+.contact-info-2 {
+  padding: 40px;
+  align-items: center;
+  gap: 0;
 }
 .contact-info-text {
   text-align: start;
@@ -80,13 +96,24 @@
   max-width: 100%;
   font-weight: 400;
   line-height: 1.5em;
+  
+}
+
+.contact-info-2 .contact-info-text {
+  text-align: center;
+  margin: 60px auto;
 }
 .titre-contact {
   text-align: start;
   font-size: 26px;
-  margin-bottom: 1.2em;
+  margin-bottom: 40px;
   font-weight: 600;
   font-style: oblique 10deg;
+}
+
+.contact-info-2 .titre-contact {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .free-call-text {
@@ -94,12 +121,14 @@
   text-transform: uppercase;
   font-size: 20px;
   font-style: oblique 10deg;
+  color: #0b2027;
+  font-weight: 500;
 }
 
 .contact-grid-container {
   display: grid;
-  grid-template-columns: calc(32% - 2.5%) calc(68% - 2.5%);
-  column-gap: 5%;
+  grid-template-columns: 360px auto;
+  column-gap: 90px;
   max-width: 100%;
   margin: 0 auto;
   
@@ -109,7 +138,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1em;
-  grid-row-gap: 5em;
+  grid-row-gap: 60px;
   max-width: 100%;
   margin-bottom: 5em;
 }
@@ -118,13 +147,13 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  grid-row-gap: 5em;
+  grid-row-gap: 60px;
   max-width: 100%;
   margin: 0 auto 5em auto;
 }
 
 .request-details-container > .nav-button {
-  margin: 0 auto 0 0;
+  margin: 0 auto 0 auto;
 }
 
 .textarea {
@@ -134,7 +163,7 @@
   overflow: scroll;
   padding: 1em;
   font-size: 16px;
-  margin-top: 1.2em;
+  margin-top: 40px;
   border: 1px solid black;
   border-radius: 0px;
   width: 100%;
@@ -150,7 +179,7 @@
   width: 100%;
   padding: 1em;
   font-size: 16px;
-  margin-top: 1em;
+  margin-top: 40px;
   color: black;
   font-family: "mastro-display, sans-serif";
   -webkit-appearance: none;
@@ -175,7 +204,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 60px;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -194,7 +223,7 @@
   height: 30px;
   width: 30px;
   margin-right: 1em;
-  accent-color: #ed6f4b;
+  accent-color: #060708;
   margin-top: 0;
   
 }
@@ -203,7 +232,7 @@
   grid-column: span 6;
 }
 .contact-form-title {
-  font-size: 26px;
+  font-size: 32px;
   font-style: oblique 10deg;
   margin-bottom: 2em;
   font-weight: 600;
@@ -241,43 +270,116 @@
   font-size: 1em;
 }
 
+@media screen and (max-width: 1190px) {
+  .contact-info-1 {
+    padding: 40px 5px 40px 25px;
+  }
+
+  .contact-grid-container {
+    grid-template-columns: 300px auto;
+    column-gap: 60px;
+  }
+}
 /* Responsive Tablette  */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1053px) {
 
   .h1-contact {
-    font-size: 50px ;
+    font-size: 54px ;
   }
 
   .h2-contact {
-    font-size: 30px;
+    font-size: 34px;
+    margin: 100px auto;
+    width: 570px;
   }
 
-  .contact-form-title, .label-contact, .titre-contact {
-    font-size: 19px;
+  .contact-form-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+.label-contact, .titre-contact {
+    font-size: 21px;
+  }
+
+  .titre-contact {
+    margin-bottom: 30px;
+  }
+
+  .contact-info-1 {
+   
+    gap: 40px;
+    padding: 63px 0 63px 63px;
+  }
+
+  .contact-info-2 {
+    padding: 73px 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info-2 .contact-info-text {
+    text-align: center;
+    margin: 40px auto;
   }
 
   .contact-info-text, .contact-form-text, .radio-label, 
   .submit-button, .free-call-text, .textarea {
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  .contact-main {
+    padding: 0;
   }
 
   .contact-details-container, .request-details-container {
     
     
-    grid-row-gap: 2.5em;
-    
-    margin-bottom: 2.5em;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contact-grid-container {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .contact-info-container {
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 0 40px;
+    gap: 0;
+  }
+
+  .contact-info-1, .contact-info-2 {
+    height: auto;
+    width: 325px;
+  }
+
+  #contact-form {
+    margin: 100px 100px 0 100px;
   }
 
   .request-details-container > .nav-button {
-    border: 1px solid black;
-    font-size: 13px;
+    border: 0.5px solid black;
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
   }
 
   input, .date, .prices, .known {
     height: 50px;
-    font-size: 13px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .radio-button-container {
+    margin-top: 30px;
+  }
+
+  .textarea {
+    margin-top: 30px;
   }
 
   .contact-info {
@@ -289,9 +391,9 @@
   }
 
   .radio {
-    height: 18px;
-    width: 18px;
-    margin-right: 0.5em;
+    height: 24px;
+    width: 28px;
+    margin-right: 15px;
     
   }
 
@@ -301,29 +403,67 @@
 
 @media screen and (max-width: 740px) {
 
-  .contact-main {
-    padding: 0 4vw;
-  }
-
   .h1-contact {
-    font-size: 24px ;
+    font-size: 36px;
+    max-width: 100%;
+    margin: 0 15px;
+    text-align: center;
   }
 
   .h2-contact {
-    font-size: 25px;
+    font-size: 28px;
+    max-width: 330px;
+    margin: 70px auto;
+  }
+
+  .contact-info-1, .contact-info-2 {
+    width: 250px;
+  }
+
+  .contact-info-1 {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .contact-info-2 {
+    padding: 50px 20px;
+  }
+
+  .contact-info-2 .contact-info-text {
+    margin: 30px auto;
+  }
+
+  .titre-contact {
+    margin-bottom: 20px;
   }
 
   .contact-form-title, .titre-contact {
-    font-size: 17px;
+    font-size: 22px;
   }
 
   .label-contact {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .contact-info-text, .contact-form-text, .radio-label,
    .submit-button, .free-call-text, .textarea {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  #contact-form {
+    margin: 70px 35px;
+  }
+
+  /* #email {
+    width: calc(65% - 5px);
+  }
+
+  #tel {
+    width: calc(35% - 5px);
+  } */
+
+  input, .date, .prices, .known, .textarea {
+    margin-top: 20px;
   }
 
   .textarea {
@@ -335,12 +475,16 @@
     font-size: 12px;
   }
 
+ .contact-details-company, .contact-details-activity {
+    grid-column: span 6;
+  }
+
   .contact-grid-container {
     display: flex;
     
     max-width: 100%;
     flex-direction: column;
-    gap: 2.5em;
+    gap: 0;
   }
 
   .request-details-container {
@@ -356,19 +500,19 @@
   .contact-info-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 70px;
     max-width: 70%;
     margin: 0 auto;
   }
 
   .contact-details-container {
-    gap: 0.5em;
-    grid-row-gap: 2em;
-    margin-bottom: 2.5em;
+    gap: 10px;
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
   }
   .radio {
-    height: 14px;
-    width: 14px;
+    height: 18px;
+    width: 22px;
   }
   .request-details-container > .nav-button {
     margin: 0 auto;
@@ -376,22 +520,3 @@
   }
 
 }
-
-/* header mode payasage */
-
-@media only screen and (max-height: 1024px) and (orientation: landscape) {
-  .h1-contact {
-    font-size: 50px;
-  }
-}
-
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
-
-  .h1-contact {
-    font-size: 24px;
-  }
-  .header-img {
-    height: 80vh;
-  }
-  
-  }
